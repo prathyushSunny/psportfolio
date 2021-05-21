@@ -22,13 +22,14 @@ setTimeout(function() {
     console.log(sliderBtn);
     let option1 = document.getElementById('option_1');
     let option2 = document.getElementById('option_2');
-    sliderBtn.onclick = function(){
-    console.log('triggered!');
-    sliderBtn.classList.toggle('slider-button-animation');
-    slider.classList.toggle('slider-open-animation');
-    option1.classList.toggle('options-container-show');
-    option2.classList.toggle('options-container-show');
-}
+    let sliderBtnClicked = function(){
+        console.log('triggered!');
+        sliderBtn.classList.toggle('slider-button-animation');
+        slider.classList.toggle('slider-open-animation');
+        option1.classList.toggle('options-container-show');
+        option2.classList.toggle('options-container-show');    
+    }
+    sliderBtn.addEventListener('click', sliderBtnClicked);
 }, 6200);
 
 
