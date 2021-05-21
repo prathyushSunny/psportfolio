@@ -29,7 +29,8 @@ setTimeout(function() {
         option1.classList.toggle('options-container-show');
         option2.classList.toggle('options-container-show');    
     }
-    sliderBtn.addEventListener('mouseover', sliderBtnClicked);
+    sliderBtn.addEventListener('click', sliderBtnClicked);
+    sliderBtn.addEventListener('touchstart', sliderBtnClicked);
 }, 6200);
 
 
