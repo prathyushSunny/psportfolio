@@ -29,7 +29,7 @@ setTimeout(function() {
         option1.classList.toggle('options-container-show');
         option2.classList.toggle('options-container-show');    
     }
-    sliderBtn.addEventListener('click', sliderBtnClicked);
+    sliderBtn.addEventListener('mouseover', sliderBtnClicked);
 }, 6200);
 
 
