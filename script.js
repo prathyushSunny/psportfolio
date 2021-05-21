@@ -29,8 +29,7 @@ setTimeout(function() {
         option1.classList.toggle('options-container-show');
         option2.classList.toggle('options-container-show');    
     }
-    sliderBtn.addEventListener('click', sliderBtnClicked);
-    sliderBtn.addEventListener('touchend', sliderBtnClicked);
+    sliderBtn.addEventListener('click', sliderBtnClicked);    
 }, 6200);
 
 
