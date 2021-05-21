@@ -39,16 +39,17 @@ html{
     0% {
         background-color: rgb(224, 224, 224);
     }
-
-    50%,
-    95% {
-        background-color: rgb(36, 36, 36);
+    90%{
+        transform: translateY(0px);
         opacity: 1
+    }
+    95% {
+        background-color: rgb(36, 36, 36);        
     }
 
     100% {
         background-color: rgb(36, 36, 36);
-        opacity: 0;
+        transform: translateY(-100%);        
     }
 }
 
@@ -340,7 +341,7 @@ html{
 }
 
 
-.section-names{    
+.section-names{       
     display: flex;
     justify-content: center;
     color: black;
@@ -358,9 +359,15 @@ html{
 }
 
 .option-container{
+    background-color: #e0e0e0;
     cursor: pointer;
     transform: translatey(0px);
     animation: optionsHidden 0.3s ease-out forwards;
+    transition: background-color 0.2s ease-out;
+}
+
+.option-container:hover{
+    background-color: #cacaca;
 }
 
 @keyframes optionsHidden{
