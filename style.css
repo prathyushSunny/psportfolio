@@ -299,9 +299,9 @@ html{
 
 .section-slider-button{
     position: absolute;
-    top: 50%;
+    top: 75%;
     right: -36px;
-    font-size: 40px;    
+    font-size: 55px;    
     cursor: pointer;    
     z-index: 3;
     border-radius: 50%;
