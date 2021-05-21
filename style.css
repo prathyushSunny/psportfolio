@@ -339,6 +339,14 @@ html{
     list-style: none;
 }
 
+@media (max-width: 450px){
+    .home-page-container{       
+        position: relative;
+        background-color: #1f2933;
+        height: 750px;    
+    }
+}
+
 @media (min-width: 950px){
     .home-page-row{
         position: relative;
@@ -350,7 +358,7 @@ html{
     .myself-image-png-2{
         position: absolute;
         height: 350px;
-        right: 200px;
+        right: 150px;
         bottom: 8%;
     }
     .contact-me-button {
@@ -382,7 +390,7 @@ html{
     .myself-image-png-2{
         position: absolute;
         height: 400px;
-        right: 220px;        
+        right: 150px;        
         bottom: 8%;
     }
     .myself-heading {
@@ -474,15 +482,22 @@ html{
 
 @media (min-width: 767px){
     .my-picture{
-        width: 70%;
+        width: 70%;        
     }
     .brief-intro-div{
         margin-top: 75px;
     }
+    .about-me-container {
+        background-color: #222d38;
+        background-size: cover;
+        font-family: 'Montserrat Alternates', sans-serif;
+        position: relative;
+        height: 950px;
+    }
     .about-paragraph {    
         margin-top: 7px;
         letter-spacing: 1px;
-        font-size: 18px;        
+        font-size: 16px;        
         color: #9aa5b1;
     }
     .main-heading {
@@ -493,6 +508,23 @@ html{
         font-family: 'Josefin Sans', sans-serif;
     }
 }
+
+@media (min-width: 1000px){
+    .about-me-container {
+        background-color: #222d38;
+        background-size: cover;
+        font-family: 'Montserrat Alternates', sans-serif;
+        position: relative;
+        height: 800px;        
+    }
+    .about-paragraph {    
+        margin-top: 7px;
+        letter-spacing: 1px;
+        font-size: 18px;        
+        color: #9aa5b1;
+    }
+}
+
 
 .my-skills-container {
     font-family: Sans-Serif;
