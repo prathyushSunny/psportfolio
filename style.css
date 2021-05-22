@@ -4,6 +4,18 @@ html{
     scroll-behavior: smooth;    
 }
 
+.bold{
+    font-weight: bold !important;
+}
+
+.color{
+    color: #cddbe9 !important;
+}
+
+.color2{
+    color: #dab2b2 !important;
+}
+
 #mainContent {    
     position: absolute;
     opacity: 0;
@@ -711,10 +723,6 @@ html{
         color: #e8e8e8;
         font-family: 'Josefin Sans', sans-serif;
         font-size: 50px;
-    }
-    .about-paragraph {
-        color: #dedede;
-        font-size: 20px;
     }
     .about-paragraph {
         color: #dedede;
