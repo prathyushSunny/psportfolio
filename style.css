@@ -322,7 +322,7 @@ html{
     font-weight: bold;
     font-size: 15px;
     text-transform: uppercase;
-    color: #a7a7a7 !important;
+    color: white !important;
     transition: color 0.3s;
 }
 
@@ -372,7 +372,7 @@ html{
 }
 
 .nv-item:hover {
-    color: #e0e0e0 !important;    
+    color: white !important;    
 }
 
 @media (max-width: 990px){    
