@@ -305,7 +305,7 @@ html{
 }
 
 .nav-logo-container{    
-    margin-left: 10px;
+    align-items: center;
 }
 
 .nav-logo{ 
@@ -373,6 +373,15 @@ html{
 
 .nv-item:hover {
     color: white !important;    
+}
+
+@media (min-width: 990px){
+    .lines{
+        display: none;
+    }
+    .navbar-div{
+        display: block; 
+    }
 }
 
 @media (max-width: 990px){    
