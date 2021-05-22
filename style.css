@@ -2,9 +2,11 @@
 
 html{
     scroll-behavior: initial;
+    position: relative;
 }
 
-.main-content {
+#main-content {    
+    position: absolute;
     opacity: 0;
     animation-name: loadMainContent;
     animation-duration: 1s;
@@ -232,40 +234,161 @@ html{
     }
 }
 
+.navbar-div{
+    position: absolute;        
+}
+
 .navbar {
-    background-color: #e8e8e8 !important;
+    position: absolute;
+    height: 15vh;
+    background-image: linear-gradient(black, transparent);       
     font-family: 'DM Sans', sans-serif;
     justify-content: space-between;
 }
 
 .nv {
-    background-color: #e3e3e3;
+    
 }
 
-.navbar-logo {
-    height: 35px;
-    transition: ;
-
-}
-
-.navbar-logo:hover {}
-
-.navbar-toggler {
-    background-color: white;
+.navbar-toggler {        
     border-width: 3px;
     border-color: #9c1414;
     border-style: solid;
 }
 
+.navbar-toggler-icon{
+    color: #a7a7a7 !important;
+
+}
+
+.hamburger{
+    position: absolute;
+    right: 5%;
+    top: 25%;    
+    height: 100%;
+    width: 100%;
+}
+
+.lines{
+    display: none;
+    margin-left: auto;
+    cursor: pointer;
+
+}
+
+.line1, .line2, .line3{
+    width: 23px;
+    height: 2px;
+    margin: 7px;
+    background-color: white;
+    opacity: 1;
+    transform: none;
+    transition: all 0.4s ease;
+}
+
+
+
+.cross .line1{
+    transform: rotate(45deg) translateY(12.5px);
+}
+
+.cross .line2{
+    opacity: 0;
+}
+
+.cross .line3{
+    transform: rotate(-45deg) translateY(-12.5px);
+}
+
+
+.nav-links{
+    z-index: 3;
+}
+
+.nav-logo-container{    
+    margin-left: 10px;
+}
+
+.nav-logo{ 
+    cursor: pointer;    
+    z-index: 5;          
+    font-weight: bold;       
+    font-size: 25px;
+    color: #e4e4e4;
+    font-family: 'Shadows Into Light', cursive;
+}
+
 .nv-item {
+    letter-spacing: 3px;
+    font-weight: bold;
     font-size: 15px;
-    color: #555555;
+    text-transform: uppercase;
+    color: #a7a7a7 !important;
     transition: color 0.3s;
 }
 
-.nv-item:hover {
-    color: #13161f !important;    
+.nav-gradient{    
+    display: none;
+    position: fixed;
+    height: 100vh;
+    width: 50vw;
+    right: 0%;
+    transform: translateX(50%);
+    background-image: linear-gradient(to left, black, transparent);    
+    z-index: 4;
+    
 }
+
+.nav-links-small{
+    top: 30%;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    position: absolute;
+    align-items: center;
+    right: 50px;
+}
+
+.nav-link-small{
+    margin-bottom: 30px;
+    text-shadow: 5px 5px 20px black;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    transform: translatex(10px);
+    opacity: 0;
+    transition: all 0.3s 0.4s ease-out;
+}
+
+.nav-links-animation{
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+.nav-link-small:hover{
+    text-decoration: none;    
+}
+
+
+.nav-gradient .nav-links{
+    right: 0px;
+}
+
+.nv-item:hover {
+    color: #e0e0e0 !important;    
+}
+
+@media (max-width: 990px){    
+    .lines{    
+        display: block;    
+    }
+    .nav-gradient{ 
+        width: 100vw;
+        transition: all 0.3s ease-out;
+    }
+    .nav-gradient-show{
+        transform: translateX(0%);
+    }
+}
+
 
 .section-slider{
     position: fixed;
@@ -274,8 +397,8 @@ html{
     justify-content: center;
     align-items: center;
     width: 50px;
-    z-index: 4;
-    background-color: #e8e8e8;
+    z-index: 3;
+    background-image: linear-gradient(to right, black, transparent);    
     animation: sectionSliderClose 0.5s 0.3s ease-out forwards;
 }
 
@@ -305,13 +428,13 @@ html{
 
 .section-slider-button{
     position: absolute;
-    top: 75%;
+    top: 80%;
     right: -36px;
-    font-size: 55px;    
+    font-size: 45px;    
     cursor: pointer;    
     z-index: 3;
     border-radius: 50%;
-    color: #e8e8e8;
+    background-image: linear-gradient(to right, #e4e4e4, transparent);
     animation: sliderRotateClosed 0.3s ease-out;
     animation-fill-mode: forwards;
     opacity: 0.4;
@@ -429,12 +552,16 @@ html{
 }
 
 .webdev{    
-    margin-left: 3px;
-    margin-right: 3px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-.music{    
+.music{
+    margin-left: 10px;
+    margin-right: 10px;
 }
+
+
 
 .home-page-container{           
     position: relative;
@@ -599,7 +726,7 @@ html{
 .about-me-container {
     background-color: #222d38;
     background-size: cover;
-    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     position: relative;
     height: 750px;
 }
@@ -665,7 +792,7 @@ html{
     .about-me-container {
         background-color: #222d38;
         background-size: cover;
-        font-family: 'Montserrat Alternates', sans-serif;
+        font-family: 'Josefin Sans', sans-serif;
         position: relative;
         height: 950px;
     }
@@ -688,7 +815,7 @@ html{
     .about-me-container {
         background-color: #222d38;
         background-size: cover;
-        font-family: 'Montserrat Alternates', sans-serif;
+        font-family: 'Josefin Sans', sans-serif;
         position: relative;
         height: 800px;        
     }
