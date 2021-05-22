@@ -27,10 +27,22 @@ setTimeout(function() {
         sliderBtn.classList.toggle('slider-button-animation');
         slider.classList.toggle('slider-open-animation');
         option1.classList.toggle('options-container-show');
-        option2.classList.toggle('options-container-show');    
-    }
-    sliderBtn.addEventListener('click', sliderBtnClicked);    
-}, 6200);
+        option2.classList.toggle('options-container-show');   
+    };
+    //hamburger animation
+    let hamburger = document.getElementById('hamburger');
+    let navGradient = document.getElementById('navGradient');
+    let gradientLinks = document.querySelectorAll('.nav-links-small a');
+    console.log(gradientLinks);
+    hamburger.addEventListener('click', () =>{
+        gradientLinks.forEach((link, index) => {            
+            link.classList.toggle('nav-links-animation');            
+        })
+        hamburger.classList.toggle('cross');
+        navGradient.classList.toggle('nav-gradient-show');
+    })
+    sliderBtn.addEventListener('click', sliderBtnClicked);
+}, 6000);
 
 
 
