@@ -42,6 +42,14 @@ setTimeout(function() {
         navGradient.classList.toggle('nav-gradient-show');
     })
     sliderBtn.addEventListener('click', sliderBtnClicked);
+
+    //MUSIC and WEBDEV Option href
+    option_1.addEventListener('click', () => {
+        window.location = "#home";
+    });
+    option_2.addEventListener('click', ()=>{
+        window.open('https://www.youtube.com/user/prathyushsunny/');
+    });
 }, 6000);
 
 
