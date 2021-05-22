@@ -4,6 +4,10 @@ html{
     scroll-behavior: smooth;    
 }
 
+a{
+    text-decoration: none !important;
+}
+
 .bold{
     font-weight: bold !important;
 }
