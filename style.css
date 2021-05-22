@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
 
 html{
-    scroll-behavior: initial;
-    position: relative;
+    scroll-behavior: smooth;    
 }
 
-#main-content {    
+#mainContent {    
     position: absolute;
     opacity: 0;
     animation-name: loadMainContent;
@@ -25,12 +24,12 @@ html{
 }
 
 .loading-container {
-    overflow-y: hidden;
+    overflow-y: hidden;    
     overflow-x: hidden;
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: rgb(224, 224, 224);
+    background-color: rgb(224, 224, 224);    
     animation-name: loadingContainer;
     animation-duration: 6s;
     animation-timing-function: ease-in-out;
@@ -333,7 +332,7 @@ html{
     height: 100vh;
     width: 50vw;
     right: 0%;
-    transform: translateX(50%);
+    transform: translateX(100%);
     background-image: linear-gradient(to left, black, transparent);    
     z-index: 4;
     
@@ -905,13 +904,13 @@ html{
 .project-brief-description {
     font-size: 15px;
     color: #9aa5b1;
-    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .read-more {
     color: #cced00;
     font-weight: bold;
-    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .read-more:hover {
@@ -954,7 +953,7 @@ html{
 
 .service-description {
     color: #9aa5b1;
-    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 @media (min-width: 767px){
@@ -1023,7 +1022,7 @@ svg {
 }
 
 .corousel-sayings {
-    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 20px;
     padding: 15px;
 }
