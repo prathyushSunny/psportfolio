@@ -239,7 +239,7 @@ html{
 
 .navbar {
     position: absolute;
-    height: 15vh;
+    height: 10vh;
     background-image: linear-gradient(black, transparent);       
     font-family: 'DM Sans', sans-serif;
     justify-content: space-between;
@@ -300,7 +300,8 @@ html{
 }
 
 
-.nav-links{
+.nav-links-container{
+    margin-left: auto;
     z-index: 3;
 }
 
@@ -318,10 +319,8 @@ html{
 }
 
 .nv-item {
-    letter-spacing: 3px;
-    font-weight: bold;
-    font-size: 15px;
-    text-transform: uppercase;
+    letter-spacing: 3px;    
+    font-size: 15px;    
     color: white !important;
     transition: color 0.3s;
 }
@@ -379,7 +378,7 @@ html{
     .lines{
         display: none;
     }
-    .navbar-div{
+    .nav-links-container{
         display: block; 
     }
 }
@@ -388,8 +387,12 @@ html{
     .lines{    
         display: block;    
     }
+    .nav-links-container{
+        display: none;
+    }
     .nav-gradient{ 
         width: 100vw;
+        height: 100vh;
         transition: all 0.3s ease-out;
     }
     .nav-gradient-show{
