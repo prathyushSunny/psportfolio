@@ -6,6 +6,7 @@ html{
 
 a{
     text-decoration: none !important;
+    color: currentColor !important;    
 }
 
 .bold{
@@ -370,7 +371,7 @@ a{
     font-weight: bold;
     transform: translatex(10px);
     opacity: 0;
-    transition: all 0.3s 0.46s ease-out;
+    transition: all 0.3s 0.35s ease-out;
 }
 
 .nav-links-animation{
