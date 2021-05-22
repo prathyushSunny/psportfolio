@@ -338,23 +338,23 @@ html{
 }
 
 .nav-links-small{
-    top: 30%;
+    top: 40%;
     text-transform: uppercase;
     letter-spacing: 4px;
     position: absolute;
     align-items: center;
-    right: 50px;
+    right: 10px;
 }
 
 .nav-link-small{
     margin-bottom: 30px;
-    text-shadow: 5px 5px 20px black;
+    text-shadow: 5px 2px 7px black;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
     transform: translatex(10px);
     opacity: 0;
-    transition: all 0.3s 0.4s ease-out;
+    transition: all 0.3s 0.46s ease-out;
 }
 
 .nav-links-animation{
