@@ -368,7 +368,7 @@ a{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 20px;
     font-weight: bold;
-    transform: translatex(10px);
+    transform: translatex(5px);
     opacity: 0;
     transition: all 0.3s 0.35s ease-out;
 }
@@ -414,7 +414,7 @@ a{
     }
     .nav-gradient-show{
         transform: translateX(0%);
-        animation: navGradientBlur 0.4s 0.2s linear forwards;
+        animation: navGradientBlur 0.3s 0.4s linear forwards;
     }
     @keyframes navGradientBlur{
         from{
