@@ -4,6 +4,35 @@ html{
     scroll-behavior: smooth;    
 }
 
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+    width: 13px;
+    background: pre;
+}
+
+::-webkit-scrollbar-thumb{    
+    background-color: #919191;
+    border-radius: 10px;
+    transition: background-color 0.5s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: #98df87;
+}
+
+::-webkit-scrollbar-track{  
+    box-shadow: inset #2b2b2b 1px 2px 3px;  
+    background-color: #2b3240;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #181c24;
+}
+
 a{
     text-decoration: none !important;
     color: currentColor !important;    
