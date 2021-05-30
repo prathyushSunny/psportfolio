@@ -67,7 +67,7 @@ setTimeout(function() {
     option_2.addEventListener('click', ()=>{
         window.open('https://www.youtube.com/user/prathyushsunny/');
     });
-}, 6);
+}, 6000);
 
 
 
