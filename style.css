@@ -414,7 +414,7 @@ a{
     }
     .nav-gradient-show{
         transform: translateX(0%);
-        animation: navGradientBlur 0.3s 0.4s linear forwards;
+        animation: navGradientBlur 0.4s 0.5s linear forwards;
     }
     @keyframes navGradientBlur{
         from{
