@@ -351,6 +351,7 @@ a{
     transform: translateX(100%);
     background-image: linear-gradient(to left, black, transparent);       
     z-index: 4;    
+    backdrop-filter: blur(4px);
 }
 
 .nav-links-small{
@@ -413,9 +414,9 @@ a{
         transition: all 0.3s ease-out;
     }
     .nav-gradient-show{
-        transform: translateX(0%);
-        animation: navGradientBlur 0.4s 0.5s linear forwards;
+        transform: translateX(0%);        
     }
+    /* NAV GRADIENT BLUR ANIMATION - DOESNT WORK :(
     @keyframes navGradientBlur{
         from{
             backdrop-filter: blur(0px);
@@ -423,7 +424,7 @@ a{
         to{
             backdrop-filter: blur(5px);
         }
-    }
+    }*/
 }
 
 
