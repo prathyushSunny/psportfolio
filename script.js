@@ -32,16 +32,33 @@ setTimeout(function() {
     //hamburger animation
     let hamburger = document.getElementById('hamburger');
     let navGradient = document.getElementById('navGradient');
-    let gradientLinks = document.querySelectorAll('.nav-links-small a');
-    console.log(gradientLinks);
+    let gradientLinks = document.querySelectorAll('.nav-links-small a');    
     hamburger.addEventListener('click', () =>{
         gradientLinks.forEach((link, index) => {            
-            link.classList.toggle('nav-links-animation');            
+            link.classList.toggle('nav-links-animation');        
         })
         hamburger.classList.toggle('cross');
-        navGradient.classList.toggle('nav-gradient-show');
+        navGradient.classList.toggle('nav-gradient-show');        
     })
     sliderBtn.addEventListener('click', sliderBtnClicked);
+    document.onclick = function(arg){
+        if (arg.target.id !== 'navLinksSmall'
+        && arg.target.id !== 'sectionNames'
+        && arg.target.id !== 'hamburger'
+        && arg.target.id !== 'hamburgerLine'
+        && arg.target.id !== 'sectionSliderButton'){
+            console.log("close request acquired!");
+            sliderBtn.classList.remove('slider-button-animation');
+            slider.classList.remove('slider-open-animation');
+            option1.classList.remove('options-container-show');
+            option2.classList.remove('options-container-show');
+            gradientLinks.forEach((link, index) => {            
+                link.classList.remove('nav-links-animation');        
+            })
+            hamburger.classList.remove('cross');
+            navGradient.classList.remove('nav-gradient-show');
+        }
+    }
 
     //MUSIC and WEBDEV Option href
     option_1.addEventListener('click', () => {
@@ -50,7 +67,7 @@ setTimeout(function() {
     option_2.addEventListener('click', ()=>{
         window.open('https://www.youtube.com/user/prathyushsunny/');
     });
-}, 6000);
+}, 6);
 
 
 
