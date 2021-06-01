@@ -678,7 +678,7 @@ a{
     margin-left: 4px;
     margin-top: 3px;
     opacity: 0;
-    animation: toggle 1s ease infinite;
+    animation: toggle 0.8s ease infinite;
 }
 
 @keyframes toggle {    
