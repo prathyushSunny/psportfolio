@@ -668,10 +668,12 @@ li:hover{
 
 @media screen and (min-width: 1200px){
     .home-image{
+        margin-top: 25px;
         max-width: 450px;
     }
     .intro-title{
         font-size: 38px;
+        margin-top: -30px;
     }
 
     .intro-para{
