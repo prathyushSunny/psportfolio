@@ -71,7 +71,7 @@ For the social icons, you can use a font icon library. Some suggestions can be f
 .fylo-container{
     height: 100vh;    
     background-color: var(--main-background);
-    overflow-x: hidden;
+    overflow-x: hidden;    
 }
 
 .fylo-logo{    
@@ -87,7 +87,7 @@ For the social icons, you can use a font icon library. Some suggestions can be f
 
 .nav-container{
     position: fixed;
-    width: 100vw;    
+    width: 100%;    
     z-index: 100;
 }
 
@@ -150,7 +150,7 @@ li:hover{
 }
 
 .home-image{
-    margin-top: 25px;
+    margin-top: 50px;
     width: 50%;
     min-width: 300px;
     max-width: 450px;  
@@ -217,7 +217,7 @@ li:hover{
     font-size: 24px;
     width: 90%;
     max-width: 600px;
-    margin-top: 50px;;
+    margin-top: 50px;
     color: #c0c0c0;
 }
 
