@@ -150,7 +150,7 @@ li:hover{
 }
 
 .home-image{
-    margin-top: 50px;
+    margin-top: 75px;
     width: 50%;
     min-width: 300px;
     max-width: 450px;  
@@ -261,7 +261,7 @@ li:hover{
 }
 
 .features-container{
-    min-width: 750px;
+    max-width: 800px;
     width: 60%;
     background: var(--main-background);    
     display: flex;
@@ -377,8 +377,7 @@ li:hover{
     align-self: center;    
 }
 
-.testimonial-card{
-    margin-right: 20px;
+.testimonial-card{    
     background-color: var(--testimonials-background);
     margin-bottom: 25px;
     padding: 30px;
@@ -657,6 +656,10 @@ li:hover{
     }
     .details-icon{
         width: 20px;
+    }
+    .testimonial-card{
+        margin-right: 12px;
+        margin-left: 12px;
     }
 }
 
