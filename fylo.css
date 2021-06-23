@@ -438,8 +438,8 @@ li:hover{
 .footer-container{    
     background: var(--footer-background);
     color: white;
-    position: relative; 
-    width: 100vw;
+    position: relative;
+    width: 100%;
 }
 
 @media screen and (min-width: 500px){
@@ -456,6 +456,7 @@ li:hover{
     top: -130px;
     padding: 20px;
     height: 700px;
+    flex-grow: 1;
 }
 
 .footer-details{
