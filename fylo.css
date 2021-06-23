@@ -261,7 +261,8 @@ li:hover{
 }
 
 .features-container{
-    max-width: 800px;
+    min-width: 750px;
+    max-width: 750px;
     width: 60%;
     background: var(--main-background);    
     display: flex;
@@ -456,7 +457,6 @@ li:hover{
     top: -130px;
     padding: 20px;
     height: 700px;
-    flex-grow: 1;
 }
 
 .footer-details{
