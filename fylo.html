@@ -2,492 +2,181 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prathyush_s</title>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="./favicon.ico"/>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" type="text/css">    
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">    
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Josefin+Sans&family=Maven+Pro&family=Montserrat+Alternates&family=Raleway:wght@500&family=Reggae+One&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <title>Fylo - pS</title>
+    <link rel="stylesheet" href="fylo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
-<body>    
-        <!--Here's a personal project I took up for myself to play around with HTML5, CSS, Bootstrap4, coupled together to build a Dynamic web page(Compatible to every device - xs, sm, md, lg). All the content in it may not provide you any authentic sense or have anything functioning in the back-end, because it is merely focused towards front-end designing, as intended to be.-->
-        <div id="loading" class="loading-container d-flex flex-column justify-content-center text-center">
-            <div class="content-container container d-block d-md-none">
-                <div class="row">
-                    <div class="loading-percentage-container col-12">
-                        <p id="loadingPercentage" class="loading-percentage">Test</p>
-                    </div>
-                    <div class="ps-name-container col-12">
-                        <p class="ps-name">
-                            <span class="p">P</span><span class="p-rest rest-name">rathyush</span>
-                        </p>
-                        <p class="ps-name">
-                            <span class="s">S</span><span class="s-rest rest-name">unny</span>
-                        </p>
-                    </div>
-                    <hr/>
-                    <div class="profession-container col-md-4 col-12">
-                        <p class="uiux profession d-inline">UI Designer</p>
-                    </div>
-                    <div class="profession-container col-md-4 col-12">
-                        <p class="front profession d-inline">Frontend Developer</p>
-                    </div>
-                    <div class="profession-container col-md-4 col-12">
-                        <p class="back profession d-inline">Content Creator</p>
-                    </div>
-                </div>
+<body>
+    <div class="fylo-container">
+        <div class="nav-container">
+        <nav class="navbar">
+            <div class="nav-logo">
+                <img class="fylo-logo" src="./images/logo.svg" alt="fylo">
             </div>
-            <div class="content-container container d-none d-md-block">                
-                <div class="row">
-                    <div class="ps-name-container col-12">
-                        <p class="ps-name-md">
-                            <span class="p-md">P</span><span class="p-rest rest-name">rathyush</span>
-                        </p>
-                        <p class="ps-name-md">
-                            <span class="s-md">S</span><span class="s-rest rest-name">unny</span>
-                        </p> 
-                    </div>
-                    <br/>
-                    <div class="profession-container col-md-4 col-12">
-                        <p class="uiux profession d-inline">UI Designer</p>
-                    </div>
-                    <div class="profession-container col-md-4 col-12">
-                        <p class="front profession-md d-inline">Frontend Developer</p>
-                    </div>
-                    <div class="profession-container col-md-4 col-12">
-                        <p class="back profession-md d-inline">Content Creator</p>
-                    </div>
-                </div>
-            </div>
+            <ul class="nav-list">
+                <li class="nav-item">Features</li>
+                <li class="nav-item">Team</li>
+                <li class="nav-item">Sign In</li>
+            </ul>
+        </nav>
+        </div>       
+        <div class="home-image-container">
+            <img class='home-image' src="./images/illustration-intro.png" alt=""/>            
         </div>
-        <div class="ajskdnasjd" id="mainContent">           
-            <div class="container-fluid navbar-div mb-md-5">
-                <div class="navbar-section">                    
-                    <nav class="navbar nv navbar-expand-lg navbar-light fixed-top">
-                        <div class="nav-logo-container"><a href="#home"><span class="nav-logo">PS</span></a></div>
-                        <div class="hamburger d-flex flex-column">
-                            <div id="hamburger" class="lines">
-                                <div id="hamburgerLine" class="line1"></div>
-                                <div id="hamburgerLine" class="line2"></div>
-                                <div id="hamburgerLine" class="line3"></div>
-                            </div>
-                        </div>
-                        <div class="nav-links-container" id="navbarNavAltMarkup">
-                            <div class="nav-links ml-auto d-flex">
-                                <a class="nav-item nv-item nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
-                                <a class="nav-item nv-item nav-link" href="#about">About me</a>
-                                <a class="nav-item nv-item nav-link" href="#skills">My skills</a>
-                                <a class="nav-item nv-item nav-link" href="#projects">Projects</a>
-                                <a class="nav-item nv-item nav-link" href="#services">Services</a>
-                                <a class="nav-item nv-item nav-link" href="#testimonials">Testimonials</a>
-                            </div>
-                        </div>
-                    </nav>
+            <div class="page-container">
+                <img class="intro-curvy" src="./images/bg-curvy-desktop.svg" alt="">
+                <div class='intro-content'>                    
+                    <h1 class='intro-title'>
+                        All your files in one secure location, accessible anywhere.
+                    </h1>
+                    <p class="intro-para">
+                        Fylo stores all your most important files in one secure location. Access them wherever you need, share and collaborate with friends family, and co-workers.
+                    </p>
+                    <button class="intro-btn">
+                        Get Started 
+                    </button>
                 </div>
-            </div>        
-            <nav id="navbar" class="main-content">
-                <div id="navGradient" class="nav-gradient d-flex flex-column justify-content-center">
-                    <div id="navLinksSmall" class="nav-links-small d-flex flex-column">
-                        <a id="navLink" class="nav-item nv-item nav-link-small" href="#home">Home<span class="sr-only">(current)</span></a>
-                        <a id="navLink" class="nav-item nv-item nav-link-small" href="#about">About me</a>
-                        <a id="navLink" class="nav-item nv-item nav-link-small" href="#skills">My skills</a>
-                        <a id="navLink" class="nav-item nv-item nav-link-small" href="#projects">Projects</a>
-                        <a id="navLink" class="nav-item nv-item nav-link-small" href="#services">Services</a>
-                        <a id="navLink" class="nav-item nv-item nav-link-small" href="#testimonials">Testimonials</a>             
+                <div class="features-container">
+                    <div class="feature-container">
+                        <img class='feature-icon' src="./images/icon-access-anywhere.svg" alt="Acess-anywhere"/>
+                        <p class="feature-title">Access your files, anywhere</p>
+                        <p class="feature-para">The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere.</p>
                     </div>
-                </div>
-            </nav>        
-            <div id="sectionSlider" class="section-slider">
-                <div id="sectionNames" class="section-names">
-                    <div id="option_1" class="webdev-option option-container">
-                        <p class="section-name webdev">web-development</p>
-                    </div>                    
-                    <div id="option_2" class="music-option option-container">
-                        <p class="section-name music">Music</p>
+                    <div class="feature-container">
+                        <img class='feature-icon' src="./images/icon-security.svg" alt="Security"/>
+                        <p class="feature-title">Security you can trust</p>
+                        <p class="feature-para">2-factor authentication and user-controlled encryption are just a couple of the security features we allow to help secure your files.</p>
+                    </div>
+                    <div class="feature-container">
+                        <img class='feature-icon' src="./images/icon-collaboration.svg" alt="Collaboration"/>
+                        <p class="feature-title">Real-time collaboration</p>
+                        <p class="feature-para">Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
+                    </div>
+                    <div class="feature-container">
+                        <img class='feature-icon' src="./images/icon-any-file.svg" alt=""/>
+                        <p class="feature-title">Store any type of file</p>
+                        <p class="feature-para">Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared.</p>
                     </div>                    
                 </div>
-                <i class="fas fa-caret-square-down section-slider-button" id="sectionSliderButton"></i>
-            </div>
-            <div class="home-page-container d-flex flex-column justify-content-center" id="home">            
-                <div class="container-fluid home-page">
-                    <div class="row d-flex home-page-row">
-                        <div class="col-12 col-md-6 order-md-1 order-lg-1 d-block d-md-none myself-image mt-5 mb-3">
-                            <img class="myself-image-png" src="https://cdn.iconscout.com/icon/free/png-256/developer-2309906-1943816.png" />
-                        </div>
-                        <div class="col-12 col-md-6 order-md-1 order-lg-1 d-none d-md-block mt-5 mb-3">
-                            <div class="">
-                                <img class="myself-image-png-2" src="https://cdn.iconscout.com/icon/free/png-256/developer-2309906-1943816.png" />
-                            </div>
-                        </div>
-                        <div class="home-intro-div col-12 col-md-6 order-md-0 order-lg-0">
-                            <div class="">
-                                <h2 class="myself-heading">Hello there! <span class=""><br />I am</span> <br /><span class="prathyush">K S S Prathyush</span>
-                            </div>
-                            <div class="about mt-3">
-                                <p class="about-paragraph">< A Frontend Web-Developer /></p>
-                                <ul class="about-paragraph-list">
-                                    <li>I develop responsive frontend webpages.</li>
-                                    <li>Primarily focussed towards UI development.</li>
-                                    <li>Compatible to almost any device.</li>
-                                </ul>
-                            </div>
-                            <div class="contact-me mt-3">
-                                <a href="#projects"><button class="contact-me-button mb-4" onclick=>My works</button></a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="stay-productive-container">
+                    <img class="stay-productive-image" src="./images/illustration-stay-productive.png" alt="stay_productive">
+                    <div class="stay-prod-content">
+                        <p class="stay-prod-title">
+                            Stay productive, wherever you are
+                        </p>
+                        <p class="stay-prod-para">
+                            Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.    
+                        </p>
+                        <p class="stay-prod-para">
+                            Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.
+                        </p>
+                        <p class="stay-prod-cta">
+                            See how Fylo works 
+                            <svg class="stay-prod-cta-svg" width="16" height="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><circle id="b" cx="6" cy="6" r="6"/><filter x="-25%" y="-25%" width="150%" height="150%" filterUnits="objectBoundingBox" id="a"><feOffset in="SourceAlpha" result="shadowOffsetOuter1"/><feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"/><feColorMatrix values="0 0 0 0 0.384313725 0 0 0 0 0.878431373 0 0 0 0 0.850980392 0 0 0 0.811141304 0" in="shadowBlurOuter1"/></filter></defs><g fill="none" fill-rule="evenodd"><g transform="translate(2 2)"><use fill="#000" filter="url(#a)" xlink:href="#b"/><use fill="#62E0D9" xlink:href="#b"/></g><path d="M8.582 6l-.363.35 1.452 1.4H5.333v.5h4.338L8.22 9.65l.363.35 2.074-2z" fill="#1B2330"/></g></svg>
+                            <!-- <img class="stay-prod-cta-svg" src="./images/icon-arrow.svg" alt=""> -->
+                        </p>
+                    </div>                    
                 </div>
-            </div>  
-            <div class="p-3 pt-5 about-me-container" id="about">
-                <div class="container-fluid">
-                    <div class="row d-flex">
-                        <div class="col-md-6 d-none d-md-block order-md-0">
-                            <img class="my-picture mt-3" src="https://i.ibb.co/3Nmtjn6/my-picture.jpg" />
-                        </div>
-                        <div class="brief-intro-div col-xs-12 col-md-6 d-flex flex-column">
-                            <h5 class="category-heading">Facts</h5>
-                            <h1 class="main-heading">About me</h1>
-                            <img class="my-picture shadow-lg d-md-none" src="https://i.ibb.co/3Nmtjn6/my-picture.jpg" />
-                            <p class="about-paragraph">
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My name is <span class="bold color">K S S PRATHYUSH</span> and I'm 23 years old from India. I'm presently working on front-end web-development.
-                                The motive is to create some Really beautiful web pages using <span class="bold color">HTML, CSS & JavaScript</span>, being all the skills I gained so far.
-                                I'm a fresher till date and actively looking for opportunities to grow professionally.
-                            </p>
-                            <p class="about-paragraph">
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I'm a dedicated person in a family of four and life
-                                for me has always been about exploring new cum different things & facing new challenges.                       
-                            </p>
-                            <p class="about-paragraph">
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Speaking a little about the <span class="bold">Miscellaneous activities</span> I indulge myself in apart from
-                                web-development are, I love to <span class="bold color">make friends</span> over the internet
-                                & I'm very much <span class="bold color">into music</span>. I listen to & make music in my free time. In fact, I have
-                                my own youtube channel if you wish to check that out(<a class="bold color2 yt-link" href="https://www.youtube.com/user/prathyushsunny/" target="_blank">Prathyush_s</a>).
-                            </p>
-                        </div>
-                    </div>
+                <img class="quotes-icon" src="./images/bg-quotes.png" alt="">
+                <div class="testimonials-container">                     
+                     <div class="testimonial-card">
+                         <p class="testimonial-text">
+                            Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.
+                         </p>
+                         <div class="testimonial-user">
+                             <img class="testi-image" src="./images/profile-1.jpg" alt="">
+                             <div class="name-n-occupation">
+                                <p class="testi-name">Satish Patel</p>
+                                <p class="testi-occupation">Founder & CEO, Huddle</p>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="testimonial-card">
+                         <p class="testimonial-text">
+                            Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.
+                         </p>
+                         <div class="testimonial-user">
+                             <img class="testi-image" src="./images/profile-2.jpg" alt="">
+                             <div class="name-n-occupation">
+                                <p class="testi-name">Bruce McKenzie</p>
+                                <p class="testi-occupation">Founder & CEO, Huddle</p>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="testimonial-card">
+                         <p class="testimonial-text">
+                            Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.
+                         </p>
+                         <div class="testimonial-user">
+                             <img class="testi-image"src="./images/profile-3.jpg" alt="">
+                             <div class="name-n-occupation">
+                                <p class="testi-name">Iva Boyd</p>
+                                <p class="testi-occupation">Founder & CEO, Huddle</p>
+                             </div>
+                         </div>
+                     </div>
                 </div>
-            </div>
-            <div class="p-2 pt-5 pb-5 my-skills-container" id="skills">
-                <div class="container">
-                    <div class="row">
-                        <div class="category-heading-div col-12 mb-3">
-                            <h5 class="category-heading">My skills</h5>
-                        </div>
-                        <div class="col-12">
-                            <h1 class="main-heading mb-3">What I know</h1>
-                        </div>
-                        <div class="col-6 col-md-3">
-                            <div class="skills-card-container shadow text-center mb-3">
-                                <img class="skill-image" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-skills-html-img.png" />
-                                <h5 class="skill-name">HTML</h5>
+                <div class="footer-container">
+                     <div class="footer-content">
+                         <div class="early-access-window">
+                             <p class="early-title">
+                                Get early access today
+                             </p>
+                             <p class="early-para">
+                                It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.                                    
+                             </p>
+                             <div class="early-access-btn-inp">                             
+                                <input class="early-input" type="text" name="" id=""   placeholder="email@example.com"/>
+                                <button class="early-btn">
+                                   Get Started For Free
+                                </button>
                             </div>
-                        </div>
-                        <div class="col-6 col-md-3">
-                            <div class="skills-card-container shadow-lg text-center">
-                                <img class="skill-image" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-skills-css-img.png" />
-                                <h5 class="skill-name">CSS</h5>
+                         </div>
+                         <div class="footer-bottom-container">                         
+                         <img class="fylo-logo-footer" src="./images/logo.svg" alt="fylo">
+                         <div class="footer-details">
+                            <div class="location details">
+                                <img class="details-icon" src="./images/icon-location.svg" alt="">
+                                <p class="details-text">orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                             </div>
-                        </div>
-                        <div class="col-6 col-md-3">
-                            <div class="skills-card-container shadow-lg text-center">
-                                <img class="skill-image" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-skills-bootstrap-img.png" />
-                                <h5 class="skill-name">Bootstrap</h5>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-3">
-                            <div class="skills-card-container shadow text-center">
-                                <img class="skill-image" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-skills-js-img.png" />
-                                <h5 class="skill-name">JS</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="p-4 pt-5 projects-done-container" id="projects">
-                <div class="container">
-                    <svg class="d-none"></svg>
-                    <div class="row">
-                        <div class="col-12">
-                            <h5 class="category-heading">My projects</h5>
-                            <a href="./calc.html" class="test" target="blank">calc_app</a>
-                            <a href="./fylo.html" class="test" target="blank">Fylo</a>
-                        </div>
-                        <div class="col-12">
-                            <h1 class="main-heading">Hands-on</h1>
-                            <div class="d-flex flex-row justify-content-end mb-3">
-                                <p style="font-size: 12px; color: #9aa5b1; text-decoration: italic;">(Nothing to see internally, yet)</p>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="project-card shadow-lg mb-4">
-                                <img class="project-image" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-project-1-img.png" alt="" />
-                                <div class="project-details p-4">
-                                    <p class="technology-tag">Web design</p>
-                                    <h3 class="project-title">Royal Grand Hotel</h3>
-                                    <p class="project-brief-description">
-                                        Royal Grand Hotel is a simple Static Website. We can
-                                        use this layout for building the other websites..
-                                    </p>
-                                    <p class="read-more">
-                                        Read More <i class="arrow fas fa-arrow-right"></i>
-                                    </p>
-                                    <a href="#"></a>
+                            <div>
+                                <div class="contact details">
+                                    <img class="details-icon" src="./images/icon-phone.svg" alt="">
+                                    <p class="details-text">+1-543-123-4567</p>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="project-card shadow-lg">
-                                <img class="project-image" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-project-2-img.png" alt="" />
-                                <div class="project-details p-4">
-                                    <p class="technology-tag">Web design</p>
-                                    <h3 class="project-title">Happy Meals</h3>
-                                    <p class="project-brief-description">
-                                        Happy Meals is the best-in-class food ordering
-                                        page today. With interactive UI/UX and simple call to
-                                        actions...
-                                    </p>
-                                    <p class="read-more">
-                                        Read More <i class="arrow fas fa-arrow-right"></i>
-                                    </p>
+                                <div class="email details">
+                                    <img class="details-icon" src="./images/icon-email.svg" alt="">
+                                    <p class="details-text">example@fylo.com</p>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="services-container p-3 pt-5" id="services">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <h5 class="category-heading">Services</h5>
-                        </div>
-                        <div class="col-12">
-                            <h1 class="main-heading mb-3">What I do...</h1>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="service-card p-3 shadow mb-4">
-                                <img class="service-image mb-2" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-web-design-img.png" />
-                                <p class="service-card-title">Static Websites</p>
-                                <p class="service-description">
-                                    A Static Website contains web-pages with fixed content.
-                                    Each page is developed using HTML and CSS and displays the same
-                                    information to every visitor.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="service-card p-3 shadow mb-4">
-                                <img class="service-image mb-2" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-web-development-img.png" />
-                                <p class="service-card-title">Responsive Web design</p>
-                                <p class="service-description">
-                                    Responsive Web design is the approach that suggests
-                                    that design and development should respond to the user's behaviour
-                                    and environment based on screen size, platform and orientation.
-                                    The name "Responsive" comes due to the behaviour of the web page itself.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="service-card p-3 shadow mb-4">
-                                <img class="service-image mb-2" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-customize-img.png" />
-                                <p class="service-card-title">Customizable Layouts</p>
-                                <p class="service-description">
-                                    Customizable sites are templates with set layouts. You may be
-                                    able to change photos and colors, but your site will look similar tomany other
-                                    sites due to the template.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="progress-container p-4 pt-5">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-4">
-                            <div class="progress-category d-flex flex-column justify-content-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="service-icon bi bi-hand-thumbs-up" viewBox="0 0 16 16">
-                                    <path d="M8.864.046C7.908-.193 7.02.53 6.956 1.466c-.072 1.051-.23 2.016-.428 2.59-.125.36-.479 1.013-1.04 1.639-.557.623-1.282 1.178-2.131 1.41C2.685 7.288 2 7.87 2 8.72v4.001c0 .845.682 1.464 1.448 1.545 1.07.114 1.564.415 2.068.723l.048.03c.272.165.578.348.97.484.397.136.861.217 1.466.217h3.5c.937 0 1.599-.477 1.934-1.064a1.86 1.86 0 0 0 .254-.912c0-.152-.023-.312-.077-.464.201-.263.38-.578.488-.901.11-.33.172-.762.004-1.149.069-.13.12-.269.159-.403.077-.27.113-.568.113-.857 0-.288-.036-.585-.113-.856a2.144 2.144 0 0 0-.138-.362 1.9 1.9 0 0 0 .234-1.734c-.206-.592-.682-1.1-1.2-1.272-.847-.282-1.803-.276-2.516-.211a9.84 9.84 0 0 0-.443.05 9.365 9.365 0 0 0-.062-4.509A1.38 1.38 0 0 0 9.125.111L8.864.046zM11.5 14.721H8c-.51 0-.863-.069-1.14-.164-.281-.097-.506-.228-.776-.393l-.04-.024c-.555-.339-1.198-.731-2.49-.868-.333-.036-.554-.29-.554-.55V8.72c0-.254.226-.543.62-.65 1.095-.3 1.977-.996 2.614-1.708.635-.71 1.064-1.475 1.238-1.978.243-.7.407-1.768.482-2.85.025-.362.36-.594.667-.518l.262.066c.16.04.258.143.288.255a8.34 8.34 0 0 1-.145 4.725.5.5 0 0 0 .595.644l.003-.001.014-.003.058-.014a8.908 8.908 0 0 1 1.036-.157c.663-.06 1.457-.054 2.11.164.175.058.45.3.57.65.107.308.087.67-.266 1.022l-.353.353.353.354c.043.043.105.141.154.315.048.167.075.37.075.581 0 .212-.027.414-.075.582-.05.174-.111.272-.154.315l-.353.353.353.354c.047.047.109.177.005.488a2.224 2.224 0 0 1-.505.805l-.353.353.353.354c.006.005.041.05.041.17a.866.866 0 0 1-.121.416c-.165.288-.503.56-1.066.56z" />
-                                </svg>
-                                <hr />
-                                <h3 class="service-label">10</h3>
-                                <p class="">Projects Completed</p>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="progress-category d-flex flex-column justify-content-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="service-icon bi bi-file-earmark-code" viewBox="0 0 16 16">
-                                    <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z" />
-                                    <path d="M8.646 6.646a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 9 8.646 7.354a.5.5 0 0 1 0-.708zm-1.292 0a.5.5 0 0 0-.708 0l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 9l1.647-1.646a.5.5 0 0 0 0-.708z" />
-                                </svg>
-                                <hr />
-                                <h3 class="service-label">8,000+</h3>
-                                <p class="">Lines of Code</p>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="progress-category d-flex flex-column justify-content-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="service-icon bi bi-clock-history" viewBox="0 0 16 16">
-                                    <path d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022l-.074.997zm2.004.45a7.003 7.003 0 0 0-.985-.299l.219-.976c.383.086.76.2 1.126.342l-.36.933zm1.37.71a7.01 7.01 0 0 0-.439-.27l.493-.87a8.025 8.025 0 0 1 .979.654l-.615.789a6.996 6.996 0 0 0-.418-.302zm1.834 1.79a6.99 6.99 0 0 0-.653-.796l.724-.69c.27.285.52.59.747.91l-.818.576zm.744 1.352a7.08 7.08 0 0 0-.214-.468l.893-.45a7.976 7.976 0 0 1 .45 1.088l-.95.313a7.023 7.023 0 0 0-.179-.483zm.53 2.507a6.991 6.991 0 0 0-.1-1.025l.985-.17c.067.386.106.778.116 1.17l-1 .025zm-.131 1.538c.033-.17.06-.339.081-.51l.993.123a7.957 7.957 0 0 1-.23 1.155l-.964-.267c.046-.165.086-.332.12-.501zm-.952 2.379c.184-.29.346-.594.486-.908l.914.405c-.16.36-.345.706-.555 1.038l-.845-.535zm-.964 1.205c.122-.122.239-.248.35-.378l.758.653a8.073 8.073 0 0 1-.401.432l-.707-.707z" />
-                                    <path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0v1z" />
-                                    <path d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z" />
-                                </svg>
-                                <hr />
-                                <h3 class="service-label">500+</h3>
-                                <p class="">Hours of work</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonials-container pt-5 pb-5 p-2" id="testimonials">
-                <div class="container">
-                    <div class="row">
-                        <div class="category-heading-div col-12 mb-3">
-                            <h5 class="category-heading">Testimonials</h5>
-                        </div>
-                        <div class="col-12">
-                            <h1 class="main-heading mb-3">My members say</h1>
-                        </div>
-                        <div class="col-0 col-md-2">
-                        </div>
-                        <div class="corousel-container col-12 col-md-8">
-                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item shadow text-center active pl-5 pr-5 pt-0">
-                                        <img class="corousel-image mb-3" src="https://i.ibb.co/C13fq5c/image.png" />
-                                        <div class="designation-div">
-                                            <h4 class="client-name mb-3">Rohith bdr</h4>
-                                        </div>
-                                        <i class="d-flex quotes flex-row justify-content-start fas fa-quote-left ml-2"></i>
-                                        <p class="corousel-sayings">
-                                            Working with Prathyush has always been fun and two way.
-                                            The outcome is solely based on the client's requirements and is
-                                            executed perfectly, in time. He's the simplest to recommend
-                                            over any other developers out there.
-                                        </p>
-                                        <div class="row stars-container d-flex flex-row justify-content-end">
-                                            <i class="fas fa-star"></i> &nbsp;
-                                            <i class="fas fa-star"></i> &nbsp;
-                                            <i class="fas fa-star"></i> &nbsp;
-                                            <i class="fas fa-star"></i> &nbsp;
-                                            <i class="fas fa-star-half-alt"></i>
-                                        </div>
+                                </div>
+                                <div class="footer-options-container">                                                            
+                                    <div class="footer-options">
+                                        <p class="footer-option">About Us</p>
+                                        <p class="footer-option">Jobs</p>
+                                        <p class="footer-option">Press</p>
+                                        <p class="footer-option">Blog</p>
                                     </div>
-                                    <div class="carousel-item shadow text-center pl-5 pr-5 pt-0">
-                                        <img class="corousel-image mb-3" src="https://i.ibb.co/c6WPHgd/image.png" />
-                                        <div class="designation-div">
-                                            <h4 class="client-name mb-3">K V Sai Pranav</h4>
-                                        </div>
-                                        <i class="d-flex quotes flex-row justify-content-start fas fa-quote-left ml-2"></i>
-                                        <p class="corousel-sayings">
-                                            I've worked with a lot of people in the past but
-                                            always missed one thing, which is good interaction. Without good
-                                            interaction there's never a satisfactory outcome. In case of Prathyush,
-                                            I have to say that I prefer his work over anybody else till date.
-                                        </p>
-                                        <div class="row stars-container d-flex flex-row justify-content-end">
-                                            <i class="fas fa-star"></i> &nbsp;
-                                            <i class="fas fa-star"></i> &nbsp;
-                                            <i class="fas fa-star"></i> &nbsp;
-                                            <i class="fas fa-star"></i> &nbsp;
-                                            <i class="fas fa-star"></i> &nbsp;
-                                        </div>
+                                    <div class="footer-options">
+                                        <p class="footer-option">Contact Us</p>
+                                        <p class="footer-option">Terms</p>
+                                        <p class="footer-option">Privacy</p>                                    
                                     </div>
-                                    <div class="carousel-item shadow text-center pl-5 pr-5 pt-0">
-                                        <img class="corousel-image mb-3" src="https://i.ibb.co/Y8Sjrjt/image.png" />
-                                        <div class="designation-div">
-                                            <h4 class="client-name mb-3">K Ananda Rao</h4>
-                                        </div>
-                                        <i class="d-flex quotes flex-row justify-content-start fas fa-quote-left ml-2"></i>
-                                        <p class="corousel-sayings">
-                                            The requirements my project had mostly involved
-                                            user-friendliness measures, for the ease of understandability to the ones using the end-product.
-                                            And I got to say, I did take the right decision regarding whom to choose for this job to be done.
-                                        </p>
-                                        <div class="row stars-container d-flex flex-row justify-content-end">
-                                            <i class="fas fa-star"></i> &nbsp;
-                                            <i class="fas fa-star"></i> &nbsp;
-                                            <i class="fas fa-star"></i> &nbsp;
-                                            <i class="fas fa-star"></i> &nbsp;
-                                            <i class="fas fa-star-half-alt"></i>
-                                        </div>
-                                    </div>
-                                    <div class="col-0 col-md-2">
-                                    </div>
-                                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="sr-only">Previous</span>
-                                    </a>
-                                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="sr-only">Next</span>
-                                    </a>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-container p-3">
-                <div class=container>
-                    <div class="row d-flex">
-                        <div class="col-12 col-md-4 p-2 internal-container-footer">
-                            <div class="logo-container d-flex flex-row justify-content-center">
-                                <img class="logo mt-5" src="https://i.ibb.co/3Nmtjn6/my-picture.jpg" />
+                        </div>                         
+                            <div class="socials">
+                                <i class="fa-icon fab fa-facebook-f"></i>
                             </div>
-                            <div class="contacts-container mt-4 d-flex flex-row justify-content-center">
-                                <div class="shadow-lg contacts-icon-container">
-                                    <i class="fab contacts-icon fa-google"></i>
-                                </div>
-                                <div class="shadow-lg contacts-icon-container ml-2">
-                                    <i class="fab contacts-icon fa-twitter"></i>
-                                </div>
-                                <div class="shadow-lg contacts-icon-container ml-2">
-                                    <i class="fab contacts-icon fa-instagram"></i>
-                                </div>
-                                <div class="shadow-lg contacts-icon-container ml-2">
-                                    <i class="fab contacts-icon fa-linkedin"></i>
-                                </div>
-                            </div>
-                            <div class="address-container text-center mt-3">
-                                <p class="paragraph">
-                                    37, Ayur Vigyan Nagar, New Delhi, India.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="d-none d-md-block col-md-1">
-                        </div>
-                        <div class="col-6 col-md-3 contact-us-container contacts-help internal-container-footer d-flex flex-column mt-4 p-2">
-                            <h1 class="contact-heading">Contact</h1>
-                            <p class="paragraph banners mt-2"><i class="fas fa-envelope"></i>&nbsp; prathyushsunny@gmail.com</p>
-                            <p class="paragraph banners mt-2"><i class="fas fa-phone-alt"></i>&nbsp; 987654321</p>
-                            <p class="paragraph banners mt-2"><i class="fab fa-discord"></i>&nbsp; sun#7840</p>
-                        </div>
-                        <div class="d-none d-md-block col-md-1">
-                        </div>
-                        <div class="col-6 col-md-3 let-us-help-you-container contacts-help internal-container-footer d-flex flex-column mt-4 p-2">
-                            <h1 class="contact-heading">Let Me Help You</h1>
-                            <p class="paragraph mt-2">Project completion</p>
-                            <p class="paragraph mt-2">Your Account</p>
-                            <p class="paragraph mt-2">Return Center</p>
-                            <p class="paragraph mt-2">Help</p>
-                        </div>
-                    </div>
-                </div>
-                <hr class="hr mt-4">
-                <div class="credits-section text-center">
-                    <p class="paragraph"><i class="far contacts-icon fa-registered"></i> 2021 By Prathyush_s &nbsp;&nbsp;&nbsp; Created using Bootstrap</p>
-                </div>
-            </div>
-        </div>     
-        <script src="script.js" type="text/javascript"></script>
-    </body>
+                     </div>
+                </div>            
+              </div>
+    </div>
+    <script src="fylo.js" type="text/javascript"></script>
+    <!-- L   About Us Jobs Press Blog Contact Us Terms Privacy -->
+</body>
 </html>
