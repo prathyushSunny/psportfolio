@@ -622,12 +622,10 @@ a{
     position: relative; 
     padding-left: 20px;
     padding-right: 20px;
-    border-left: 5px solid rgb(27, 68, 70);
+    border-left: 0.5px solid rgb(139, 139, 139);
     /* border-right: 5px solid rgb(13, 68, 50); */
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
+    /* border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px; */
 }  
 
 .about-paragraph-list > li::before {    
@@ -635,7 +633,7 @@ a{
     font-weight: bold;
     font-size: 20px;
     position: absolute;
-    left: -7px;
+    left: -5.5px;
     color: #b1f59a;   
     animation: blink 2s ease infinite;
     opacity: 1;    
