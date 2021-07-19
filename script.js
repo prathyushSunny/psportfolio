@@ -1,6 +1,7 @@
 let loading = document.getElementById('loading');
 let main = document.getElementById('mainContent');
 let loadingPercentage = document.getElementById('loadingPercentage');
+let navbar = document.getElementById('navbarDivision');
 let percentage = 0;
 document.body.removeChild(main);
 
@@ -19,6 +20,7 @@ setTimeout(function() {
     // adding animations to the SLIDER on the left
     var slider = document.getElementById('sectionSlider');
     var sliderBtn = document.getElementById('sectionSliderButton');
+    var presentYOffset = 0;
     console.log(sliderBtn);
     let option1 = document.getElementById('option_1');
     let option2 = document.getElementById('option_2');
@@ -64,7 +66,12 @@ setTimeout(function() {
             hamburger.classList.remove('cross');
             navGradient.classList.remove('nav-gradient-show');            
         }
-    }
+    }    
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > presentYOffset) navbar.classList.add('navbar-hidden');
+        else navbar.classList.remove('navbar-hidden');
+        presentYOffset = window.pageYOffset;
+    })
 
     //MUSIC and WEBDEV Option href
     option_1.addEventListener('click', () => {
