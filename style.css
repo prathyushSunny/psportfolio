@@ -769,6 +769,7 @@ a{
     color: white;
     text-decoration: bold;
     font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 20px;
 }  
 .my-picture {
     position: absolute;
