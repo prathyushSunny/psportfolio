@@ -37,16 +37,22 @@ setTimeout(function() {
         gradientLinks.forEach((link, index) => {            
             link.classList.toggle('nav-links-animation');        
         })
+        main.classList.toggle('main-content-position-fixed');
         hamburger.classList.toggle('cross');
-        navGradient.classList.toggle('nav-gradient-show');        
+        navGradient.classList.toggle('nav-gradient-show');              
     })
     sliderBtn.addEventListener('click', sliderBtnClicked);
-    document.onclick = function(arg){
-        if (arg.target.id !== 'navLinksSmall'
-        && arg.target.id !== 'sectionNames'
-        && arg.target.id !== 'hamburger'
-        && arg.target.id !== 'hamburgerLine'
-        && arg.target.id !== 'sectionSliderButton'){
+
+    /*The below snippet is to make sure the navbar and the
+    slider closes on clicking on anywhere on the screen
+    except for the IDs mentioned in the IF condition*/
+    document.onclick = function(arg){        
+            if (arg.target.id !== 'navLinksSmall'
+            && arg.target.id !== 'sectionNames'
+            && arg.target.id !== 'hamburger'
+            && arg.target.id !== 'hamburgerLine'
+            && arg.target.id !== 'sectionSliderButton'){
+            main.classList.remove('main-content-position-fixed');
             console.log("close request acquired!");
             sliderBtn.classList.remove('slider-button-animation');
             slider.classList.remove('slider-open-animation');
@@ -56,18 +62,18 @@ setTimeout(function() {
                 link.classList.remove('nav-links-animation');        
             })
             hamburger.classList.remove('cross');
-            navGradient.classList.remove('nav-gradient-show');
+            navGradient.classList.remove('nav-gradient-show');            
         }
     }
 
     //MUSIC and WEBDEV Option href
     option_1.addEventListener('click', () => {
-        window.location = "#home";
+        window.location = "#projects";
     });
     option_2.addEventListener('click', ()=>{
         window.open('https://www.youtube.com/user/prathyushsunny/');
     });
-}, 6000);
+}, 0);
 
 
 
