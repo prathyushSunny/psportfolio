@@ -895,7 +895,7 @@ a{
     color: #b1f59a;
     font-family: 'Josefin Sans', sans-serif;    
     font-weight: 600;
-    font-size: 30px;    
+    font-size: 25px;    
     display: flex;
     align-items: center;
     column-gap: 30px;
@@ -936,7 +936,7 @@ a{
 }
 
 .project-sno{
-    font-size: 70px ;
+    font-size: 50px ;
     font-weight: bold;
 }
 
@@ -967,7 +967,9 @@ a{
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0px 15px 10px #1f2833;
-    height: 650px;
+    height: 675px;
+    position: relative;
+    overflow: hidden;
 }
 
 .project-container:hover{
@@ -1011,6 +1013,65 @@ a{
 
 .project-option:hover .project-svg{
     color: #f0ff8c;
+}
+
+.view-proj{
+    color: #b1f59a;
+}
+
+.proj-des-container{
+    background: #555555;    
+    position: absolute;
+    bottom: -200px;
+    right: 0;
+    left: 0;
+    height: 250px;
+    color: white;
+    font-family: monospace; 
+    padding: 10px;
+    font-size: 17px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: none;
+    transition: box-shadow .3s ease-out, bottom 0.1s ease-out;    
+}
+
+.proj-des-container:hover{
+    bottom: 0;
+    box-shadow: 0px -25px 25px #242a36;
+}
+
+.proj-des-title{
+      font-weight: 500;
+}
+
+.proj-des-svg{
+    font-size: 35px;
+    color: #555555;
+    position: absolute;
+    top: -15px;
+    right: 7px;
+    background-color: #d8d8d8;
+    box-shadow: 0px 0px 3px rgb(189, 255, 255);
+    border-radius: 100%;
+    transform: none;
+    transition: transform 0.2s 0.3s ease, color 0.2s 0.3s ease;
+}
+
+.proj-des-container:hover .proj-des-svg{
+    transform: scale(1.1);
+    transform: rotate(180deg);
+    color: #2b2b2b;
+}
+
+.proj-des-container:hover .proj-des-title{
+    color: #c3f1ff;
+    font-weight: 700;    
+}
+
+.proj-des-text{
+    font-size: 17px;
+    text-align: left;
 }
 
 /* 
