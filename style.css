@@ -1021,6 +1021,7 @@ a{
 
 .proj-des-container{
     background: #3f3f3f;    
+    /* background: linear-gradient(to top, black, #555555) */
     position: absolute;
     bottom: -200px;
     right: 0;
@@ -1072,6 +1073,12 @@ a{
 .proj-des-text{
     font-size: 17px;
     text-align: left;
+}
+
+@media screen and (max-width: 400px){
+    .proj-des-text{
+        font-size: 15px;
+    }
 }
 
 /* 
