@@ -1,4 +1,4 @@
-    @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+/*     @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
 
 html{
     scroll-behavior: smooth;    
@@ -1286,4 +1286,214 @@ svg {
 
 .banners{
     
+}
+ */
+
+*{
+    padding: none;
+    margin: none;
+    box-sizing: border-box;
+}
+
+*{
+    animation: none;
+}
+
+.my-skills-animated-div{    
+    background-color: #1f2933;
+    overflow-y: hidden;
+    overflow-y: hidden;  
+    top: 50%;
+    position: relative;
+    height: 480px;
+    width: 480px;
+    display: flex;
+    justify-content: center;    
+    align-items: center;    
+}
+
+
+.novice, .advance, .intermediate{              
+    position: relative;        
+    border-style: inset;
+    border-width: 5px;
+    border-radius: 50%;   
+    display: flex;
+    justify-content: center;
+    align-items: center;       
+}
+
+.advance{
+    animation: rotateAdv 5s infinite linear;
+    height: 100px;
+    width: 100px;    
+    border-color: #f0ab5d;
+}
+
+@keyframes rotateAdv{
+    from{
+        transform: none;
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+.intermediate{
+    border-color: #a0ffa4;
+    animation: rotateInt 10s infinite linear;
+    height: 250px;
+    width: 250px;    
+}
+
+@keyframes rotateInt{
+    from{
+        transform: none;
+    }
+    to{
+        transform: rotate(-360deg);
+    }
+}
+
+
+.novice{      
+    animation: rotateNv 20s infinite linear;
+    height: 400px;
+    width: 400px;
+    border-color: #4fc6ca;
+}
+
+@keyframes rotateNv{
+    from{
+        transform: none;
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.image{
+    filter: drop-shadow(2px 3px 4px black);
+    position: absolute;    
+}
+
+.image-adv{
+    animation: rotateAdvImgs 6.666s infinite linear;
+    height: 70px;
+    width: 70px;    
+}
+
+@keyframes rotateAdvImgs{
+    from{
+        transform: none;
+    }
+    to{
+        transform: rotate(-360deg);
+    }
+}
+
+.image-int{
+    animation: rotateIntImgs 20s infinite linear;
+    height: 65px;
+    width: 65px;
+}
+
+@keyframes rotateIntImgs{
+    from{
+        transform: none;
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.image-nv{
+    animation: rotateNvImgs 20s infinite linear;
+    height: 70px;
+    width: 70px;
+}
+
+@keyframes rotateNvImgs{
+    from{
+        transform: none;
+    }
+    to{
+        transform: rotate(-360deg);
+    }
+}
+
+.html-img{
+    top: -45%;
+}
+
+.js-img{
+    height: 78px;
+    width: 78px;
+    top: 33%;
+    right: -37%;
+}
+
+.css-img{    
+    top: 35%;
+    left: -40%
+}
+
+.ps-img{
+    height: 60px;
+    width: 60px;
+    top: 65%;
+    left: -5%;
+}
+
+.bs-img{
+    height: 50px;
+    width: 50px;
+    top: 88%;
+    right: 39%;
+}
+
+.py-img{
+    top: 10%;
+    left: -7%;
+    height: 55px;
+    width: 55px;
+}
+
+.react-img{
+    top: 8%;
+    right: -7%;
+}
+
+.ae-img{
+    height: 60px;
+    width: 60px;
+    top: -9%;
+}
+
+.c-img{
+    height: 55px;
+    width: 50px;
+    top: 65%;
+    right: -2%;
+}
+
+.java-img{
+    bottom: -7%;
+    height: 60px;
+    width: 60px;
+}
+
+.msw-img{
+    left: -2%;
+    top: 18%;
+    height: 55px;
+    width: 55px;
+}
+
+.vp-img{
+    top: 18%;
+    height: 55px;
+    width: 55px;
+    right: -2%;
 }
