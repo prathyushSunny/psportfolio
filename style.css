@@ -920,10 +920,10 @@ a{
     align-self: flex-start;
     flex-wrap: wrap;
     row-gap: 10px;    
-    align-items: flex-start;
-    flex-grow: 1;
+    align-items: flex-start;    
     max-height: 100px;
 }
+
 
 .project-uses-tag{
     /* color: #2b2b2b; */
@@ -984,8 +984,20 @@ a{
     column-gap: 40px;
     width: 100%;
     border-top: 1px #555555 solid;
-    padding-top: 15px;
+    /* padding-top: 15px; */
+    flex-grow: 1;
 }
+
+/* @media screen and (max-width: 400px){
+    .project-uses-container{
+        flex-grow: 0;
+    }
+    .project-options{
+        align-items: center;
+        padding-top: 0;
+        flex-grow: 1;      
+    }
+} */
 
 .project-option{
     display: flex;
