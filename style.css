@@ -245,7 +245,14 @@ a{
     background-image: linear-gradient(black, transparent);       
     font-family: 'DM Sans', sans-serif;
     justify-content: space-between;
-}  
+    transform: none;
+    transition: transform 0.2s ease;
+}
+
+.navbar-hidden{
+    transform: translateY(-100px);
+}
+
 .nv {
     
 }  
@@ -595,7 +602,8 @@ a{
     width: 120px;
     color: #cecece;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 15px;
+    font-size: 18px;
+    font-weight: 500;
     transition: background-color 0.4s, border-width 0.3s, border-color 0.3s, color 0.3s;
 }  
 .contact-me-button:hover {
@@ -1186,10 +1194,15 @@ svg {
 .contacts-help {
     font-family: 'Montserrat Alternates', sans-serif;
     background-color: #13191f;
+    word-wrap: break-word;
 }  
 .hr {
     background-color: rgb(53, 52, 52);
 }  
 .credits-section{
     font-family: 'Josefin Sans', sans-serif;
+}
+
+.banners{
+    
 }
