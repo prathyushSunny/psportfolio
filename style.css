@@ -542,11 +542,12 @@ a{
     position: relative;
     background-color: #1f2933;
     height: 650px;    
-    max-height: 900px;
+    max-height: 900px;    
     padding-bottom: 25px;
 }  
 .home-page{
     position: absolute; 
+    max-width: 1450px;
 }  
 .home-page-row {
     letter-spacing: 2px;;
