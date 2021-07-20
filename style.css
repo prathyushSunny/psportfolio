@@ -478,6 +478,8 @@ a{
 .option-container{
     background-color: #e0e0e0;
     cursor: pointer;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;       
     transform: translatey(0px);
     animation: optionsHidden 0.3s ease-out forwards;
     transition: background-color 0.2s ease-out;
