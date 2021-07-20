@@ -542,6 +542,8 @@ a{
     position: relative;
     background-color: #1f2933;
     height: 650px;    
+    max-height: 900px;
+    padding-bottom: 25px;
 }  
 .home-page{
     position: absolute; 
@@ -557,7 +559,8 @@ a{
     font-family: 'Josefin Sans', sans-serif;
 }  
 .myself-image-png {
-    height: 225px;
+    margin-top: 20px;
+    height: 200px;
     align-items: center;
 }  
 .myself-image-png-2 {
@@ -605,6 +608,7 @@ a{
     font-size: 18px;
     font-weight: 500;
     transition: background-color 0.4s, border-width 0.3s, border-color 0.3s, color 0.3s;
+    margin-bottom: 15px;
 }  
 .contact-me-button:hover {
     background-color: rgb(226, 226, 226);    
@@ -674,11 +678,13 @@ a{
         position: relative;
         background-color: #1f2933;
         height: 750px;    
+        max-height: 900px;
     }
 }  
 @media (min-width: 950px){
     .home-page-container{
         height: 100vh;
+        max-height: 900px;
     }
     .home-page-row{
         position: relative;
