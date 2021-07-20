@@ -315,7 +315,7 @@ a{
 }  
 .nv-item {
     letter-spacing: 3px;    
-    font-size: 15px;    
+    font-size: 17px;    
     color: white !important;
     transition: color 0.3s;
 }  
@@ -989,7 +989,8 @@ a{
     align-items: center;
     row-gap: 10px;
     max-width: 350px;
-    border: 1px #4b4b4b solid;
+    /* border: 1px #4b4b4b solid; */
+    border-top: 2px solid #b1f59a;
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0px 15px 10px #1f2833;
@@ -1234,6 +1235,11 @@ a{
 .services-container {
     background-color: #1f2933;
 }  
+
+.service-label{
+    color: #b1f59a;
+}
+
 .service-card {
     background-color: #27303a;
     border-radius: 10px;
@@ -1252,8 +1258,7 @@ a{
 .service-card-title{
     font-size: 20px;
     letter-spacing: 4px;
-    color: white;
-    text-decoration: bold;
+    color: #b1f59a;    
     font-family: 'Josefin Sans', sans-serif;
 }  
 .service-description {
@@ -1262,8 +1267,7 @@ a{
 }  
 @media (min-width: 767px){
     .service-card-title{
-        letter-spacing: 4px;
-        color: white;
+        letter-spacing: 4px;        
         text-decoration: bold;
         font-size: 30px;
         font-family: 'Josefin Sans', sans-serif;
@@ -1291,9 +1295,7 @@ svg {
     border-left: none;
     border-top: none;
 }  
-.service-label {
-    color: white;    
-}  
+
 .testimonials-container {
     background-color: #1f2933;
 }  
@@ -1361,7 +1363,7 @@ svg {
 }  
 .contact-heading {
     font-family: 'Josefin Sans', sans-serif;
-    color: #b4c1cf;
+    color: #b1f59a;
     font-size: 20px;
     font-weight: bold;
 }  
@@ -1377,6 +1379,6 @@ svg {
     font-family: 'Josefin Sans', sans-serif;
 }
 
-.banners{
-    
+.footer-my-name{
+    color: #b1f59a !important;
 }
