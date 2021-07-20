@@ -1103,10 +1103,10 @@ a{
 
     @keyframes proj-des-close-animation{
         0%{
-            opacity: 0;
+            opacity: 0;            
         }   
         100%{   
-            opacity: 1;
+            opacity: 0.8;           
         }
     }
 
