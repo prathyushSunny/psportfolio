@@ -689,8 +689,8 @@ a{
     }
     .myself-image-png-2{
         position: absolute;
-        height: 350px;
-        right: 150px;
+        height: 400px;
+        right: 100px;
         bottom: 8%;
     }
     .contact-me-button {
@@ -722,8 +722,8 @@ a{
     }
     .myself-image-png-2{
         position: absolute;
-        height: 400px;
-        right: 150px;        
+        height: 450px;
+        right: 100px;        
         bottom: 8%;
     }
     .myself-heading {
