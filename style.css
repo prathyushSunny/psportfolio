@@ -1029,6 +1029,10 @@ a{
     color: #f0ff8c;
 }
 
+.project-option:hover .view-proj{
+    color: #d1f5c5;
+}
+
 .view-proj{
     color: #b1f59a;
 }
@@ -1096,8 +1100,8 @@ a{
 }
 
 @media screen and (max-width: 650px){
-    .proj-des-title::after{
-        opacity: 0;
+    .proj-des-title::after{   
+        opacity: 0;     
         animation: proj-des-close-animation 0.5s 0.3s forwards;
     }
 
@@ -1106,7 +1110,7 @@ a{
             opacity: 0;            
         }   
         100%{   
-            opacity: 0.8;           
+            opacity: 0.9;           
         }
     }
 
@@ -1125,6 +1129,38 @@ a{
         border: 1px #555555 solid;
     }
 }
+
+@media screen and (min-width: 651px){
+    .proj-des-title::after{        
+        opacity: 0;
+        animation: proj-des-close-animation 0.5s 0.3s forwards;
+    }
+
+    @keyframes proj-des-close-animation{
+        0%{
+            opacity: 0;            
+        }   
+        100%{   
+            opacity: 0.9;           
+        }
+    }
+
+    .proj-des-container:hover .proj-des-title::after{
+        position: absolute;        
+        content: 'hover outside to close';
+        color: white;
+        font-size: 15px;
+        top: -80px;
+        right: 5px;
+        background: rgb(36, 36, 36);
+        border-radius: 10px;
+        padding: 3px;        
+        width: 150px;
+        text-align: center;
+        border: 1px #555555 solid;
+    }
+}
+
 
 /* 
 .project-card {
