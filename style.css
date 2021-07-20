@@ -565,7 +565,7 @@ a{
 }  
 .myself-image-png-2 {
     position: relative;    
-    height: 300px;
+    height: 250px;
 }  
 .prathyush {
     font-family: 'Reggae One', cursive;
@@ -695,8 +695,8 @@ a{
     }
     .myself-image-png-2{
         position: absolute;
-        height: 400px;
-        right: 100px;
+        height: 350px;
+        right: 0px;
         bottom: 8%;
     }
     .contact-me-button {
@@ -728,8 +728,8 @@ a{
     }
     .myself-image-png-2{
         position: absolute;
-        height: 450px;
-        right: 100px;        
+        height: 400px;
+        right: 0px;        
         bottom: 8%;
     }
     .myself-heading {
@@ -757,6 +757,14 @@ a{
         margin-top: 3px;
     }
 }  
+
+@media screen and (min-width: 1300px){
+    .myself-image-png-2{
+        height: 435px;
+        right: 10px;
+    }
+}
+
 .about-me-container {
     background-color: #222d38;
     background-size: cover;
