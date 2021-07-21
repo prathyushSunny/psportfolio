@@ -38,8 +38,7 @@ setTimeout(function() {
     hamburger.addEventListener('click', () =>{
         gradientLinks.forEach((link, index) => {            
             link.classList.toggle('nav-links-animation');        
-        })
-        main.classList.toggle('main-content-position-fixed');
+        })        
         hamburger.classList.toggle('cross');
         navGradient.classList.toggle('nav-gradient-show');              
     })
@@ -53,8 +52,7 @@ setTimeout(function() {
             && arg.target.id !== 'sectionNames'
             && arg.target.id !== 'hamburger'
             && arg.target.id !== 'hamburgerLine'
-            && arg.target.id !== 'sectionSliderButton'){
-            main.classList.remove('main-content-position-fixed');
+            && arg.target.id !== 'sectionSliderButton'){            
             console.log("close request acquired!");
             sliderBtn.classList.remove('slider-button-animation');
             slider.classList.remove('slider-open-animation');
@@ -68,7 +66,7 @@ setTimeout(function() {
         }
     }    
     window.addEventListener('scroll', () => {
-        if (window.pageYOffset > presentYOffset) navbar.classList.add('navbar-hidden');
+        if (window.pageYOffset > presentYOffset && !hamburger.classList.contains('cross')) navbar.classList.add('navbar-hidden');
         else navbar.classList.remove('navbar-hidden');
         presentYOffset = window.pageYOffset;
     })
