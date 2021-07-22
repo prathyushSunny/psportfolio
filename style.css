@@ -1015,6 +1015,16 @@ a{
     overflow: hidden;
 }
 
+.proj-des-close{
+    position: absolute;
+    /* background: red; */
+    height: 50px;
+    width: 50px;
+    z-index: 1000;
+    right: 0px;
+    bottom: 225px;
+}
+
 .project-container:hover{
 }
 
@@ -1156,7 +1166,7 @@ a{
         }
     }
 
-    .proj-des-container:hover .proj-des-title::after{
+    /* .proj-des-container:hover .proj-des-title::after{
         position: absolute;        
         content: 'click outside to close';
         color: white;
@@ -1169,7 +1179,7 @@ a{
         width: 125px;
         text-align: center;
         border: 1px #555555 solid;
-    }
+    } */
 }
 
 @media screen and (min-width: 651px){
@@ -1187,7 +1197,7 @@ a{
         }
     }
 
-    .proj-des-container:hover .proj-des-title::after{
+    /* .proj-des-container:hover .proj-des-title::after{
         position: absolute;        
         content: 'hover outside to close';
         color: white;
@@ -1200,7 +1210,7 @@ a{
         width: 150px;
         text-align: center;
         border: 1px #555555 solid;
-    }
+    } */
 }
 
 
