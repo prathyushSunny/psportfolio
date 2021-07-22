@@ -362,12 +362,12 @@ a{
     color: white !important;    
 }  
 
-@media all and (max-width: 990px){    
+@media all and (max-width: 800px){    
     .lines{    
         display: block;
     }
     .nav-links-container{
-        display: none;
+        display: none;        
     }
     .nav-gradient{ 
         width: 100vw;
