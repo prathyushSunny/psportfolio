@@ -361,17 +361,10 @@ a{
 .nv-item:hover {
     color: white !important;    
 }  
-@media all and (min-width: 990px){
-    .lines{
-        display: none;
-    }
-    .nav-links-container{
-        display: block; 
-    }
-}  
+
 @media all and (max-width: 990px){    
     .lines{    
-        display: block;    
+        display: block;
     }
     .nav-links-container{
         display: none;
@@ -394,6 +387,16 @@ a{
         }
     }*/
 }  
+
+@media all and (min-width: 991px){
+    .lines{
+        display: none;
+    }
+    .nav-links-container{
+        display: block; 
+    }
+} 
+
 .section-slider{
     position: fixed;
     height: 100vh;
@@ -548,15 +551,29 @@ a{
     padding-bottom: 25px;
 }  
 .home-page{
-    position: absolute; 
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;    
     max-width: 1450px;
 }  
 .home-page-row {
-    letter-spacing: 2px;;
-    top: 25px;    
+    letter-spacing: 2px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-53%, -35%);
     font-family: 'Josefin Sans', sans-serif;
     text-align: center;
 }  
+
+@media screen and (max-width: 949px){
+    .home-page-row {
+        position: relative;
+        top: 2%;
+        left: 0;
+        transform: none;
+    }
+}
+
 .myself-heading {
     color: #e8e8e8;
     font-family: 'Josefin Sans', sans-serif;
@@ -680,8 +697,8 @@ a{
     .home-page-container{       
         position: relative;
         background-color: #1f2933;
-        height: 750px;    
-        max-height: 900px;
+        height: 750px;
+        max-height: 1500px;
     }
 }  
 @media (min-width: 950px){
@@ -890,8 +907,7 @@ a{
     border-bottom-left-radius: 40px;
     padding-top: 15px;
     transform: scale(1);
-    transition: transform 0.25s ease-in-out;
-    cursor: pointer;
+    transition: transform 0.25s ease-in-out;    
 }  
 .skills-card-container:hover{
     transform: scale(1.05);
