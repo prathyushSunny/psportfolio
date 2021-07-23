@@ -1,4 +1,4 @@
-    @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
 
 html{
     scroll-behavior: smooth;    
@@ -547,7 +547,7 @@ a{
     position: relative;
     background-color: #1f2933;
     height: 650px;    
-    max-height: 900px;    
+    max-height: 1000px;    
     padding-bottom: 25px;
 }  
 .home-page{
@@ -614,6 +614,35 @@ a{
         opacity: 1;
     }
 }  
+
+.what-i-am-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-skills-tags{
+    display: flex;
+    color: white;
+    flex-wrap: wrap;
+    column-gap: 15px;
+    max-width: 300px;
+    justify-content: center;
+    line-height: 1px;
+}
+
+.home-skill-tag{
+    font-size: 12px;
+    color: #d4ffe8;
+    border: #535353 1px solid;
+    padding: 8px;
+    border-radius: 15px;
+    background: #323c47;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .contact-me-button {
     background-color: transparent;
     margin-top: 15px;
@@ -693,12 +722,13 @@ a{
     }
 }
 
-@media (max-width: 450px){
+@media (max-width: 949px){
     .home-page-container{       
         position: relative;
         background-color: #1f2933;
         height: 750px;
         max-height: 1500px;
+        align-items: center;
     }
 }  
 @media (min-width: 950px){
@@ -723,7 +753,7 @@ a{
         background-color: transparent;
         outline: none !important;
         box-shadow: none;
-        margin-top: 20px;
+        margin-top: 5px;
         border-width: 2px;
         border-radius: 10px;
         border-style: solid;
@@ -974,7 +1004,7 @@ a{
     border: #535353 1px solid;
     padding: 5px;
     border-radius: 15px;
-    background: #323c47    
+    background: #323c47;
 }
 
 .project-sno{
