@@ -634,7 +634,6 @@ a{
 .home-skill-tag{
     font-size: 12px;
     color: #d4ffe8;
-    border: #535353 1px solid;
     padding: 8px;
     border-radius: 5px;
     background: #323c47;
@@ -644,7 +643,6 @@ a{
     position: relative;
     column-gap: 3px;
     /* box-shadow: 2px 2px 5px #181c24;        */
-    border-top: 1px solid #d4ffe8;
     padding-top: 10px;
 }
 
