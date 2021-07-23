@@ -1018,8 +1018,8 @@ a{
 .proj-des-close{
     position: absolute;
     /* background: red; */
-    height: 50px;
-    width: 50px;
+    height: 80px;
+    width: 60px;
     z-index: 1000;
     right: 0px;
     bottom: 225px;
@@ -1125,13 +1125,13 @@ a{
     box-shadow: 0px 0px 3px rgb(189, 255, 255);
     border-radius: 100%;
     transform: none;
-    transition: transform 0.2s 0.3s ease, color 0.2s 0.3s ease, background-color 0.2s 0.3s ease;
+    transition: transform 0.2s 0.2s ease, color 0.2s 0.2s ease, background-color 0.2s 0.2s ease;
 }
 
 .proj-des-container:hover .proj-des-svg{
     transform: scale(1.1);
     transform: rotate(180deg);
-    color: rgb(134, 32, 32);
+    color: rgb(32, 32, 32);
     background-color: #a4a4a4;
 }
 
@@ -1166,20 +1166,20 @@ a{
         }
     }
 
-    /* .proj-des-container:hover .proj-des-title::after{
+    .proj-des-container:hover .proj-des-title::after{
         position: absolute;        
-        content: 'click outside to close';
+        content: 'close';
         color: white;
         font-size: 13px;
-        top: -75px;
-        right: 5px;
+        top: -55px;
+        right: 1px;
         background: rgb(36, 36, 36);
         border-radius: 10px;
         padding: 3px;        
-        width: 125px;
+        width: 60px;
         text-align: center;
         border: 1px #555555 solid;
-    } */
+    }
 }
 
 @media screen and (min-width: 651px){
