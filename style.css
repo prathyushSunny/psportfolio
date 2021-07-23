@@ -241,7 +241,7 @@ a{
 }  
 .navbar {
     position: absolute;
-    height: 100px;
+    height: 90px;
     background-image: linear-gradient(black, transparent);       
     font-family: 'DM Sans', sans-serif;
     justify-content: space-between;
@@ -1136,12 +1136,13 @@ a{
     text-align: center;
     cursor: pointer;
     box-shadow: none;
-    transition: box-shadow .3s ease-out, bottom 0.1s ease-out;    
+    transition: box-shadow .3s ease-out, bottom 0.25s ease-out, background 0.3s ease-out;    
 }
 
 .proj-des-container:hover{
     bottom: 0;
     box-shadow: 0px -25px 25px #242a36;
+    background: #414141; 
 }
 
 .proj-des-title{
