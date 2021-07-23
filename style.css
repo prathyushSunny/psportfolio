@@ -644,7 +644,8 @@ a{
     position: relative;
     column-gap: 3px;
     /* box-shadow: 2px 2px 5px #181c24;        */
-    border-top: 2px solid #d4ffe8;
+    border-top: 1px solid #d4ffe8;
+    padding-top: 10px;
 }
 
 .contact-me-button {
