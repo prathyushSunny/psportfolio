@@ -580,7 +580,7 @@ a{
 }  
 .myself-image-png {
     margin-top: 20px;
-    height: 200px;
+    height: 180px;
     align-items: center;
 }  
 .myself-image-png-2 {
@@ -628,7 +628,7 @@ a{
     column-gap: 15px;
     max-width: 300px;
     justify-content: center;
-    line-height: 1px;
+    line-height: 0.5px;
 }
 
 .home-skill-tag{
@@ -636,11 +636,15 @@ a{
     color: #d4ffe8;
     border: #535353 1px solid;
     padding: 8px;
-    border-radius: 15px;
+    border-radius: 5px;
     background: #323c47;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    column-gap: 3px;
+    /* box-shadow: 2px 2px 5px #181c24;        */
+    border-top: 2px solid #d4ffe8;
 }
 
 .contact-me-button {
@@ -753,7 +757,7 @@ a{
         background-color: transparent;
         outline: none !important;
         box-shadow: none;
-        margin-top: 5px;
+        margin-top: 20px;
         border-width: 2px;
         border-radius: 10px;
         border-style: solid;
