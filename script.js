@@ -14,8 +14,11 @@ let navLogo = document.querySelector('.nav-logo');
 let contactIcons = document.querySelectorAll('.contacts-icon-container');
 let toggleCursor = document.querySelector('.toggle-custom-cursor-btn');
 let isCursorEnabled = true;
+let windowCursorCompatibility = true;
+setInterval(() => windowCursorCompatibility = window.innerWidth >= 900, 500);
 let mouseClicked = false;
 let pageY = 0;
+
 // console.log(myWorks);
 document.body.removeChild(main);
 
@@ -62,7 +65,7 @@ setTimeout(function() {
     slider closes on clicking on anywhere on the screen
     except for the IDs mentioned in the IF condition*/
     document.onclick = function(arg){                        
-            cursor.classList.add('cursor-clicked');            
+            cursor.classList.add('cursor-clicked');        
             mouseClicked = true;
             let setIntId = setInterval(() => {
                 cursor.classList.remove('cursor-clicked');
@@ -96,17 +99,17 @@ setTimeout(function() {
 
     //custom cursor
     window.addEventListener('mousemove', e => {
-        // cursor.setAttribute('style', 'left: '+e.pageX+'px; top: '+e.pageY+'px;');    
-        if (isCursorEnabled){
+        // cursor.setAttribute('style', 'left: '+e.pageX+'px; top: '+e.pageY+'px;');           
+        if (isCursorEnabled && windowCursorCompatibility){
             cursor.style.display = 'block'
             pageY = e.screenY - 114.5;        
             cursor.style.left = (e.pageX-12.5) + 'px';
             cursor.style.top = (e.pageY-12.5) + 'px';
-        }            
+        }else cursor.style.display = 'none';
     });
     //ProjectDescription container mouse hover 
     mouseInOut = element => {
-        if (!mouseClicked && isCursorEnabled){
+        if (!mouseClicked && isCursorEnabled && windowCursorCompatibility){
         element.addEventListener('mouseover', () => cursor.classList.add('cursor-close'));
         element.addEventListener('mouseout', () => cursor.classList.remove('cursor-close'));
         }
