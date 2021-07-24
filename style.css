@@ -787,6 +787,7 @@ a{
     flex-direction: column;               
     align-self: center;
     position: relative;     
+    margin-left: 15px;
     /* border-left: 0.5px solid rgb(139, 139, 139); */
     /* border-right: 5px solid rgb(13, 68, 50); */
     /* border-bottom-left-radius: 10px;
@@ -794,8 +795,8 @@ a{
 }  
 
 .about-paragraph-list > li::before {    
-    content: '•';
-    font-weight: bold;
+    content: '✔';
+    font-weight: 600;        
     font-size: 20px;
     position: absolute;
     left: -5.5px;
