@@ -795,9 +795,9 @@ a{
 }  
 
 .about-paragraph-list > li::before {    
-    content: '✔';
-    font-weight: 600;        
-    font-size: 20px;
+    content: '✦';
+    font-weight: 500;        
+    font-size: 17px;
     position: absolute;
     left: -5.5px;
     color: #b1f59a;   
