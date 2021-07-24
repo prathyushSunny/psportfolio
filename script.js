@@ -3,7 +3,7 @@ let main = document.getElementById('mainContent');
 let loadingPercentage = document.getElementById('loadingPercentage');
 let navbar = document.getElementById('navbarDivision');
 let percentage = 0;
-let cursor = document.querySelector('.cursor');
+let cursor = document.querySelector('#cursor');
 let projects = document.querySelectorAll('.project-option');
 let projdes = document.querySelectorAll('.proj-des-container');
 let myWorks = document.querySelector('.contact-me-button');
@@ -12,6 +12,7 @@ let projectImages = document.querySelectorAll('.project-image');
 let sidebarOptions = document.querySelectorAll('.option-container');
 let navLogo = document.querySelector('.nav-logo');
 let contactIcons = document.querySelectorAll('.contacts-icon-container');
+let mouseClicked = false;
 let pageY = 0;
 // console.log(myWorks);
 document.body.removeChild(main);
@@ -58,7 +59,14 @@ setTimeout(function() {
     /*The below snippet is to make sure the navbar and the
     slider closes on clicking on anywhere on the screen
     except for the IDs mentioned in the IF condition*/
-    document.onclick = function(arg){        
+    document.onclick = function(arg){                        
+            cursor.classList.add('cursor-clicked');            
+            mouseClicked = true;
+            let setIntId = setInterval(() => {
+                cursor.classList.remove('cursor-clicked');
+                clearInterval(setIntId);
+                mouseClicked = false;
+            }, 500);
             if (arg.target.id !== 'navLinksSmall'
             && arg.target.id !== 'sectionNames'
             && arg.target.id !== 'hamburger'
@@ -93,8 +101,10 @@ setTimeout(function() {
     });
     //ProjectDescription container mouse hover 
     mouseInOut = element => {
+        if (!mouseClicked){
         element.addEventListener('mouseover', () => cursor.classList.add('cursor-close'));
         element.addEventListener('mouseout', () => cursor.classList.remove('cursor-close'));
+        }
     }
     projects.forEach(element => {        
         mouseInOut(element);
@@ -126,7 +136,7 @@ setTimeout(function() {
     option_2.addEventListener('click', ()=>{
         window.open('https://www.youtube.com/user/prathyushsunny/');
     });
-}, 6000);
+}, 0);
 
 
 
