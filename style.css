@@ -6,7 +6,7 @@ html{
 }  
 
 body{
-    /* position: relative;     */
+    /* position: relative;     */    
 }
 
 *{
@@ -14,6 +14,67 @@ body{
     margin: 0px;
     box-sizing: border-box;      
 }  
+
+.toggle-custom-cursor-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    padding: 5px;
+    position: fixed;
+    background: #98df87;   
+    opacity: 0.7;     
+    z-index: 100;
+    bottom: 80px;
+    right: 20px;
+    height: 65px;
+    width: 65px;
+    padding: 5px;
+    border-radius: 50%;
+    transform: none;
+    box-shadow: #98df87 0px 0px 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, opacity 0.2s ease;
+    cursor: pointer;    
+}
+
+@media screen and (max-width: 900px){
+    .toggle-custom-cursor-btn{
+        display: none;
+    }
+}
+
+.toggle-cursor-svg{
+    font-size: 45px;
+    color: rgb(59, 59, 59);    
+}
+
+.toggle-custom-cursor-btn:hover{    
+    transform: scale(1.02);
+    opacity: 1;
+}
+
+.toggle-custom-cursor-btn:hover .toggle-cursor-svg:after{
+    content: 'Toggle Custom Cursor';    
+    position: absolute;
+    color: white;
+    top: -60px;
+    width: 150px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    right: 0px;
+    opacity: 1;
+    font-size: 16px;
+    background: #141414;
+    padding: 5px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 180px;
+    border-radius: 5px;
+    opacity: 0.9;
+}
 
 .cursor-container{
     z-index: -50;
@@ -32,7 +93,7 @@ body{
     opacity: 1;
     transform: none;
     transition: top 0.2s ease-out, left 0.2s ease-out;
-    animation: cursorCircle 1.5s infinite;    
+    animation: cursorCircle 1.2s infinite;    
 }
 
 .cursor-clicked{
@@ -40,7 +101,7 @@ body{
     width: 25px;
     border: 1px #b3f08a solid;
     border-radius: 50%;
-    position: absolute;
+    position: absolute;    
     top: 0;    
     left: 0;
     z-index: 5;
@@ -860,6 +921,10 @@ a{
     .about-paragraph-list{
         padding-left: 20px;
         padding-right: 20px;
+        margin-top 15px;
+    }
+    .about-paragraph-list > li{
+        font-size: 18px;
     }
     .contact-me-button {
         background-color: transparent;
@@ -1296,7 +1361,7 @@ a{
 
 @media screen and (max-width: 650px){
     .proj-des-title::after{   
-        opacity: 0;     
+        opacity: 0;
         animation: proj-des-close-animation 0.5s 0.3s forwards;
     }
 
@@ -1321,8 +1386,8 @@ a{
         padding: 3px;        
         width: 60px;
         text-align: center;
-        border: 1px #555555 solid;
-    }
+        border: 1px #555555 solid;        
+    }    
 }
 
 @media screen and (min-width: 651px){
