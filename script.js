@@ -12,6 +12,8 @@ let projectImages = document.querySelectorAll('.project-image');
 let sidebarOptions = document.querySelectorAll('.option-container');
 let navLogo = document.querySelector('.nav-logo');
 let contactIcons = document.querySelectorAll('.contacts-icon-container');
+let toggleCursor = document.querySelector('.toggle-custom-cursor-btn');
+let isCursorEnabled = true;
 let mouseClicked = false;
 let pageY = 0;
 // console.log(myWorks);
@@ -94,18 +96,35 @@ setTimeout(function() {
 
     //custom cursor
     window.addEventListener('mousemove', e => {
-        // cursor.setAttribute('style', 'left: '+e.pageX+'px; top: '+e.pageY+'px;');        
-        pageY = e.screenY - 114.5;        
-        cursor.style.left = (e.pageX-12.5) + 'px';
-        cursor.style.top = (e.pageY-12.5) + 'px';
+        // cursor.setAttribute('style', 'left: '+e.pageX+'px; top: '+e.pageY+'px;');    
+        if (isCursorEnabled){
+            cursor.style.display = 'block'
+            pageY = e.screenY - 114.5;        
+            cursor.style.left = (e.pageX-12.5) + 'px';
+            cursor.style.top = (e.pageY-12.5) + 'px';
+        }            
     });
     //ProjectDescription container mouse hover 
     mouseInOut = element => {
-        if (!mouseClicked){
+        if (!mouseClicked && isCursorEnabled){
         element.addEventListener('mouseover', () => cursor.classList.add('cursor-close'));
         element.addEventListener('mouseout', () => cursor.classList.remove('cursor-close'));
         }
     }
+    toggleCursor.onclick = () => {
+        isCursorEnabled = !isCursorEnabled
+        if(isCursorEnabled)
+        {
+            cursor.style.display = 'block';
+            toggleCursor.style.background = '#98df87';
+            toggleCursor.style.boxShadow = '#98df87 0px 0px 10px';
+        }
+        else{
+            cursor.style.display = 'none';    
+            toggleCursor.style.background = '#a4a4a4';
+            toggleCursor.style.boxShadow = 'none';
+        }        
+    };
     projects.forEach(element => {        
         mouseInOut(element);
     });
