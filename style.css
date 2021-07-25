@@ -15,6 +15,126 @@ body{
     box-sizing: border-box;      
 }  
 
+.send-me-mail-container{
+    position: fixed;
+    z-index: 1500;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: brightness(40%);
+    /* display: none; */
+    font-family: 'Josefin Sans', sans-serif;
+    transition: backdrop-filter 0.2s ease;    
+}
+
+.hide-mail-container{
+    backdrop-filter: none;
+}
+
+.contact-form-heading{
+    font-weight: 600;
+    color: #27303a;
+    width: 90%;
+    text-align: center;
+}
+
+.form-title{
+    font-size: 20px;    
+    font-weight: 500;
+    color: #222222;
+}
+
+.mail-modal{    
+    height: 90%;
+    width: 90%;
+    max-width: 550px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* backdrop-filter: blur(3px); */
+    background: white;
+    box-shadow: 0px 0px 25px rgb(26, 25, 25);
+    border-radius: 15px;
+    transform: scale(1);
+    transition: transform 0.2s ease-in;
+    padding: 5px;
+    overflow: auto;
+}
+
+.modal-cross{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+    color: #555555;
+    cursor: pointer;
+}
+
+.modal-cross:hover{
+    color: rgb(163, 0, 0);
+}
+
+.modal-close{
+    transform: scale(0);
+}
+
+.form-attr{
+    outline: none;
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px #a1a1a1 solid;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.form-sub{
+    width: 90%;
+    max-width: 200px;
+}
+
+.form-msg{
+    height: 100px;
+    min-height: 50px;    
+    width: 90%;
+    max-width: 300px;
+    word-wrap: break-word;  
+}
+
+.form-btn{
+    border: 1px #7a7a7a solid;
+    border-radius: 5px;
+    padding: 10px;
+    background: #27303a;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.form-btn:hover{
+    background: #242a36;
+}
+
+.contact-me-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;    
+}
+
+.form-sending-details{
+    margin-top: 25px;
+    line-height: 5px;    
+}
+
+.form-details-item{        
+}
+
 .toggle-custom-cursor-btn{
     display: flex;
     align-items: center;
@@ -25,7 +145,7 @@ body{
     background: #98df87;   
     opacity: 0.7;     
     z-index: 100;
-    bottom: 80px;
+    bottom: 50px;
     right: 20px;
     height: 65px;
     width: 65px;
@@ -37,9 +157,80 @@ body{
     cursor: pointer;    
 }
 
+.send-mail-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    padding: 5px;
+    position: fixed;
+    background: #a4a4a4;
+    opacity: 0.7; 
+    z-index: 100;
+    bottom: 140px;
+    right: 20px;
+    height: 65px;
+    width: 65px;
+    padding: 5px;
+    border-radius: 50%;
+    transform: none;    
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, opacity 0.2s ease;
+    cursor: pointer;
+}
+
+.send-mail-btn:hover{        
+    opacity: 1;
+}
+
+.send-mail-svg{
+    font-size: 40px;
+    color: rgb(59, 59, 59);
+}
+
+.send-mail-btn:hover .send-mail-svg:after{
+    content: 'Let\'s get in Touch!';    
+    position: absolute;
+    color: white;
+    top: 7px;
+    left: -195px;
+    width: 100px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    right: 0px;
+    opacity: 1;
+    font-size: 19px;
+    background: #141414;
+    padding: 5px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 180px;
+    border-radius: 5px;
+    opacity: 0.9;
+}
+
 @media screen and (max-width: 900px){
     .toggle-custom-cursor-btn{
         display: none;
+    }
+    .send-mail-btn{
+        bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .send-mail-btn{
+        height: 50px;
+        width: 50px;
+        bottom: 50px;
+    }
+    .send-mail-svg{
+        font-size: 30px;
+    }
+    .send-mail-btn:hover .send-mail-svg:after{
+        top: 0px;
     }
 }
 
@@ -48,22 +239,22 @@ body{
     color: rgb(59, 59, 59);    
 }
 
-.toggle-custom-cursor-btn:hover{    
-    transform: scale(1.02);
+.toggle-custom-cursor-btn:hover{        
     opacity: 1;
 }
 
 .toggle-custom-cursor-btn:hover .toggle-cursor-svg:after{
-    content: 'Toggle Custom Cursor';    
+    content: 'Custom Cursor';    
     position: absolute;
     color: white;
-    top: -60px;
-    width: 150px;
+    top: 7px;
+    left: -195px;
+    width: 100px;
     font-family: 'Josefin Sans', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     right: 0px;
     opacity: 1;
-    font-size: 16px;
+    font-size: 19px;
     background: #141414;
     padding: 5px;
     display: flex;
@@ -594,7 +785,7 @@ a{
 }  
 .section-slider-button{
     position: absolute;
-    top: 80%;
+    top: 87%;
     right: -36px;
     font-size: 40px;    
     cursor: pointer;    
@@ -808,6 +999,12 @@ a{
     column-gap: 3px;
     /* box-shadow: 2px 2px 5px #181c24;        */
     padding-top: 10px;
+}
+
+@media screen and (min-width: 900px){
+    .home-skill-tag{
+        font-size: 14px;
+    }
 }
 
 .contact-me-button {
