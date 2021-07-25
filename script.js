@@ -18,13 +18,13 @@ let windowCursorCompatibility = true;
 setInterval(() => windowCursorCompatibility = window.innerWidth >= 900, 500);
 let mouseClicked = false;
 
-let sendMailBtn = document.querySelector('.send-mail-btn');
-let contactFormContainer = document.querySelector('.send-me-mail-container');
-let contactFormModal = document.querySelector('.mail-modal');
-let contactForm = document.getElementById('contactForm');
-let formSub = document.getElementById('subject');
-let formMsg = document.getElementById('message');
-let formCross = document.querySelector('.modal-cross');
+// let sendMailBtn = document.querySelector('.send-mail-btn');
+// let contactFormContainer = document.querySelector('.send-me-mail-container');
+// let contactFormModal = document.querySelector('.mail-modal');
+// let contactForm = document.getElementById('contactForm');
+// let formSub = document.getElementById('subject');
+// let formMsg = document.getElementById('message');
+// let formCross = document.querySelector('.modal-cross');
 let pageY = 0;
 
 // console.log(myWorks);
@@ -40,7 +40,7 @@ percentageId = setInterval(function() {
 }, 50);
 
 setTimeout(function() {    
-    closeContactForm();
+    // closeContactForm();
     document.body.removeChild(loading);
     document.body.appendChild(main);
     // adding animations to the SLIDER on the left
@@ -75,7 +75,7 @@ setTimeout(function() {
     except for the IDs mentioned in the IF condition*/
     document.onclick = function(arg){
             //closing the contact Form            
-            if (arg.target.classList.value === 'send-me-mail-container') closeContactForm();
+            // if (arg.target.classList.value === 'send-me-mail-container') closeContactForm();
             cursor.classList.add('cursor-clicked');        
             mouseClicked = true;
             let setIntId = setInterval(() => {
@@ -171,30 +171,42 @@ setTimeout(function() {
     });
 
     //Contact-me form
-    formSub.addEventListener('keyup', () => localStorage.setItem('formSubject', formSub.value));
-    formMsg.addEventListener('keyup', () => localStorage.setItem('formMessage', formMsg.value));
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();        
-        let contactLink = 'https://mail.google.com/mail/?view=cm&fs=1&to=prathyushsunny@gmail.com&su='+ formSub.value +'&body='+ formMsg.value;
-        window.open(contactLink);
-    })
+    // formSub.addEventListener('keyup', () => localStorage.setItem('formSubject', formSub.value));
+    // formMsg.addEventListener('keyup', () => localStorage.setItem('formMessage', formMsg.value));
+    // contactForm.addEventListener('submit', (e) => {
+    //     e.preventDefault();        
+    //     // let contactLink = 'https://mail.google.com/mail/?view=cm&fs=1&to=prathyushsunny@gmail.com&su='+ formSub.value +'&body='+ formMsg.value;
+    //     // window.open(contactLink);        
+    //     Email.send({
+    //         // SecureToken: ' 06c3c214-23c3-47f1-9747-6370eeaf5d63',
+    //         Host : "smtp.elasticemail.com",
+    //         Username : "prathyushsunny770@gmail.com",
+    //         Password : "BD3C826DF5CF66691E9659E7B39DF69A0EFA",
+    //         To : 'prathyushsunny@gmail.com',
+    //         From : 'prathyushsunny770@gmail.com',
+    //         Subject : formSub.value,
+    //         Body : formMsg.value
+    //     }).then(
+    //       message => alert(message)
+    //     );
+    // })    
 
     //opening contact form
-    sendMailBtn.onclick = () =>{
-        formSub.value = localStorage.getItem('formSubject');
-        formMsg.value = localStorage.getItem('formMessage');
-        contactFormContainer.style.display = 'flex';
-        contactFormContainer.classList.remove('hide-mail-container');
-        contactFormModal.classList.remove('modal-close');
-    }
+    // sendMailBtn.onclick = () =>{
+    //     formSub.value = localStorage.getItem('formSubject');
+    //     formMsg.value = localStorage.getItem('formMessage');
+    //     contactFormContainer.style.display = 'flex';
+    //     contactFormContainer.classList.remove('hide-mail-container');
+    //     contactFormModal.classList.remove('modal-close');
+    // }
 
     //closing contact form
-    function closeContactForm(){
-        contactFormContainer.classList.add('hide-mail-container');
-        contactFormModal.classList.add('modal-close');
-        setTimeout(() => contactFormContainer.style.display = 'none', 400);
-    }
-    formCross.onclick = () => closeContactForm();        
+    // function closeContactForm(){
+    //     contactFormContainer.classList.add('hide-mail-container');
+    //     contactFormModal.classList.add('modal-close');
+    //     setTimeout(() => contactFormContainer.style.display = 'none', 400);
+    // }
+    // formCross.onclick = () => closeContactForm();        
 }, 6000);
 
 
