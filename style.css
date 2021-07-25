@@ -9,7 +9,7 @@ body{
     /* position: relative;     */    
 }
 
-*{
+*{  
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;      
@@ -27,6 +27,16 @@ body{
     /* display: none; */
     font-family: 'Josefin Sans', sans-serif;
     transition: backdrop-filter 0.2s ease;    
+    animation: openMailContainer 0.2s ease-out;    
+}
+
+@keyframes openMailContainer {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 
 .hide-mail-container{
@@ -42,14 +52,15 @@ body{
 
 .form-title{
     font-size: 20px;    
-    font-weight: 500;
+    font-weight: 600;
     color: #222222;
 }
 
 .mail-modal{    
     height: 90%;
-    width: 90%;
-    max-width: 550px;
+    max-height: 650px;
+    width: 85%;
+    max-width: 450px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -62,7 +73,35 @@ body{
     transform: scale(1);
     transition: transform 0.2s ease-in;
     padding: 5px;
-    overflow: auto;
+    overflow-y: auto;
+    overflow: hidden;
+    animation: openModal 0.1s ease-in;
+    z-index: 100;  
+}
+
+.mail-modal:before{
+    content: '';
+    background-image: url('https://cdn.pixabay.com/photo/2019/12/05/13/30/abstract-background-4675153_1280.png');
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+@keyframes openModal{
+    from{        
+        transform: scale(0.2);
+        /* right: -450px;
+        top: 150px; */
+    }
+    to{
+        transform: scale(1);
+        /* right: 50%;
+        top: 50%;
+        transform: translate(-100%, -55%); */
+    }
 }
 
 .modal-cross{
@@ -89,18 +128,19 @@ body{
     border: 1px #a1a1a1 solid;
     margin-bottom: 20px;
     color: black;
+    font-size: 17px;
 }
 
 .form-sub{
-    width: 90%;
-    max-width: 200px;
+    width: 70%;
+    max-width: 250px;
 }
 
 .form-msg{
     height: 100px;
     min-height: 50px;    
-    width: 90%;
-    max-width: 300px;
+    width: 70%;
+    max-width: 250px;
     word-wrap: break-word;  
 }
 
@@ -133,6 +173,7 @@ body{
 }
 
 .form-details-item{        
+    line-height: 5px;
 }
 
 .toggle-custom-cursor-btn{
@@ -218,6 +259,12 @@ body{
     .send-mail-btn{
         bottom: 50px;
     }
+    /* .send-me-mail-container{
+        display: none;
+    }
+    .send-mail-btn{
+        display: none;
+    } */
 }
 
 @media screen and (max-width: 520px){
