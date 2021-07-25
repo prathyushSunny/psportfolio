@@ -17,6 +17,14 @@ let isCursorEnabled = true;
 let windowCursorCompatibility = true;
 setInterval(() => windowCursorCompatibility = window.innerWidth >= 900, 500);
 let mouseClicked = false;
+
+let sendMailBtn = document.querySelector('.send-mail-btn');
+let contactFormContainer = document.querySelector('.send-me-mail-container');
+let contactFormModal = document.querySelector('.mail-modal');
+let contactForm = document.getElementById('contactForm');
+let formSub = document.getElementById('subject');
+let formMsg = document.getElementById('message');
+let formCross = document.querySelector('.modal-cross');
 let pageY = 0;
 
 // console.log(myWorks);
@@ -31,7 +39,8 @@ percentageId = setInterval(function() {
     }   
 }, 50);
 
-setTimeout(function() {
+setTimeout(function() {    
+    closeContactForm();
     document.body.removeChild(loading);
     document.body.appendChild(main);
     // adding animations to the SLIDER on the left
@@ -64,7 +73,9 @@ setTimeout(function() {
     /*The below snippet is to make sure the navbar and the
     slider closes on clicking on anywhere on the screen
     except for the IDs mentioned in the IF condition*/
-    document.onclick = function(arg){                        
+    document.onclick = function(arg){
+            //closing the contact Form            
+            if (arg.target.classList.value === 'send-me-mail-container') closeContactForm();
             cursor.classList.add('cursor-clicked');        
             mouseClicked = true;
             let setIntId = setInterval(() => {
@@ -76,7 +87,7 @@ setTimeout(function() {
             && arg.target.id !== 'sectionNames'
             && arg.target.id !== 'hamburger'
             && arg.target.id !== 'hamburgerLine'
-            && arg.target.id !== 'sectionSliderButton'){            
+            && arg.target.id !== 'sectionSliderButton'){
             // console.log("close request acquired!");
             sliderBtn.classList.remove('slider-button-animation');
             slider.classList.remove('slider-open-animation');
@@ -86,7 +97,7 @@ setTimeout(function() {
                 link.classList.remove('nav-links-animation');        
             })
             hamburger.classList.remove('cross');
-            navGradient.classList.remove('nav-gradient-show');            
+            navGradient.classList.remove('nav-gradient-show');                 
         }
     }    
     //To hide the navbar on scrolling downwards and vice versa
@@ -107,7 +118,7 @@ setTimeout(function() {
             cursor.style.top = (e.pageY-12.5) + 'px';
         }else cursor.style.display = 'none';
     });
-    //ProjectDescription container mouse hover 
+    //Custom cursor disabling on Mouse Hover on different Sections
     mouseInOut = element => {
         if (!mouseClicked && isCursorEnabled && windowCursorCompatibility){
         element.addEventListener('mouseover', () => cursor.classList.add('cursor-close'));
@@ -158,6 +169,32 @@ setTimeout(function() {
     option_2.addEventListener('click', ()=>{
         window.open('https://www.youtube.com/user/prathyushsunny/');
     });
+
+    //Contact-me form
+    formSub.addEventListener('keyup', () => localStorage.setItem('formSubject', formSub.value));
+    formMsg.addEventListener('keyup', () => localStorage.setItem('formMessage', formMsg.value));
+    contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();        
+        let contactLink = 'https://mail.google.com/mail/?view=cm&fs=1&to=prathyushsunny@gmail.com&su='+ formSub.value +'&body='+ formMsg.value;
+        window.open(contactLink);
+    })
+
+    //opening contact form
+    sendMailBtn.onclick = () =>{
+        formSub.value = localStorage.getItem('formSubject');
+        formMsg.value = localStorage.getItem('formMessage');
+        contactFormContainer.style.display = 'flex';
+        contactFormContainer.classList.remove('hide-mail-container');
+        contactFormModal.classList.remove('modal-close');
+    }
+
+    //closing contact form
+    function closeContactForm(){
+        contactFormContainer.classList.add('hide-mail-container');
+        contactFormModal.classList.add('modal-close');
+        setTimeout(() => contactFormContainer.style.display = 'none', 400);
+    }
+    formCross.onclick = () => closeContactForm();        
 }, 6000);
 
 
