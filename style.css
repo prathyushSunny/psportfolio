@@ -639,7 +639,7 @@ a{
 .navbar {
     position: absolute;
     height: 90px;
-    background-image: linear-gradient(black, transparent);       
+    background-image: linear-gradient(rgb(12, 12, 12), transparent);       
     font-family: 'DM Sans', sans-serif;
     justify-content: space-between;
     transform: none;
@@ -950,22 +950,47 @@ a{
     background-color: #1f2933;
     height: 650px;    
     max-height: 1000px;    
-    padding-bottom: 25px;
 }  
+
+.home-page-container > *{
+    z-index: 2;
+}
+
+.home-page-container:before{
+    content: '';
+    background-image: url('https://assets.hongkiat.com/uploads/pattern-wallpapers/01.jpg');
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    opacity: 0.1;
+}
+
 .home-page{
     display: flex;
     flex-direction: column;    
     justify-content: center;    
     max-width: 1450px;
+    padding-bottom: 35px;    
 }  
 .home-page-row {
     letter-spacing: 2px;
     top: 50%;
     left: 50%;
-    transform: translate(-53%, -35%);
+    transform: translate(-54%, -40%);
     font-family: 'Josefin Sans', sans-serif;
     text-align: center;
 }  
+
+@media screen and (min-width: 770px) and (max-width: 948px){
+    .home-page-row {
+        position: relative;
+        top: 50%;
+        left: 0;
+        transform: none;
+    }
+}
 
 @media screen and (max-width: 949px){
     .home-page-row {
@@ -1136,7 +1161,7 @@ a{
     .home-page-container{       
         position: relative;
         background-color: #1f2933;
-        height: 750px;
+        height: 700px;
         max-height: 1500px;
         align-items: center;
     }
@@ -1156,11 +1181,9 @@ a{
         position: absolute;       
         left: 50px;        
     }
-    .myself-image-png-2{
-        position: absolute;
+    .myself-image-png-2{        
         height: 315px;
-        right: 0px;
-        bottom: 8%;
+        right: 0px;        
     }
     .about-paragraph-list{
         padding-left: 20px;
@@ -1197,11 +1220,9 @@ a{
         position: absolute;       
         left: 75px;        
     }
-    .myself-image-png-2{
-        position: absolute;
+    .myself-image-png-2{        
         height: 400px;
-        right: 0px;        
-        bottom: 8%;
+        right: 0px;                
     }
     .myself-heading {
         color: #e8e8e8;
@@ -1231,16 +1252,32 @@ a{
 
 @media screen and (min-width: 1300px){
     .myself-image-png-2{
-        height: 435px;
-        right: 10px;
+        height: 435px;        
     }
 }
 
 .about-me-container {
-    background-color: #222d38;    
+    /* background-color: #222d38;     */
+    background-color: #1f2933 !important;
     font-family: 'Josefin Sans', sans-serif;
     position: relative;    
 }  
+
+.about-me-container > *{
+    z-index: 2;
+}
+
+.about-me-container:before{
+    content: '';
+    background-image: url('https://assets.hongkiat.com/uploads/pattern-wallpapers/01.jpg');
+    background-size: unset;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    opacity: 0.1;        
+}
+
 .category-heading {
     color: #cced00;
     letter-spacing: 3px;
@@ -1325,6 +1362,7 @@ a{
         font-family: 'Josefin Sans', sans-serif;
         position: relative;
         max-height: 1100px;    
+        padding-bottom: 50px;
     }
     .about-paragraph {    
         margin-top: 7px;
@@ -1336,12 +1374,33 @@ a{
 .my-skills-container {
     font-family: Sans-Serif;
     background-color: #1f2933;
+    position: relative;
 }
+
+.my-skills-container > *{
+    z-index: 3;
+}
+
+.my-skills-container:before{
+    content: '';
+    background-image: url('https://assets.hongkiat.com/uploads/pattern-wallpapers/01.jpg');
+    background-size: unset;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    opacity: 0.1;        
+}
+
 
 .skill-cards{
     display: flex;
     flex-wrap: wrap;
     row-gap: 20px;
+}
+
+.skill-card{
+    z-index: 3;
 }
 
 .skills-card-container {
@@ -1375,7 +1434,24 @@ a{
 }  
 
 .projects-done-container {
-    background-color: #222d38;
+    /* background-color: #222d38; */
+    background-color: #1f2933;
+    position: relative;
+}
+
+.projects-done-container > *{
+    z-index: 3;
+}
+
+.projects-done-container:before{
+    content: '';
+    background-image: url('https://assets.hongkiat.com/uploads/pattern-wallpapers/01.jpg');
+    background-size: unset;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    opacity: 0.1;        
 }
 
 .container-projects{
@@ -1450,17 +1526,18 @@ a{
 }
 
 .project-container{
-    display: flex;
+    display: flex;    
     background-color: #25313d;
     flex-direction: column;
     align-items: center;
     row-gap: 10px;
     max-width: 350px;
+    z-index: 3;
     /* border: 1px #4b4b4b solid; */
     border-top: 2px solid #b1f59a;
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0px 15px 10px #1f2833;
+    box-shadow: 0px 15px 10px #1a212b;
     height: 600px;
     position: relative;
     overflow: hidden;
@@ -1713,10 +1790,30 @@ a{
 
 .services-container {
     background-color: #1f2933;
+    position: relative;
 }  
+
+.services-container > *{
+    z-index: 3;
+}
+
+.services-container:before{
+    content: '';
+    background-image: url('https://assets.hongkiat.com/uploads/pattern-wallpapers/01.jpg');
+    background-size: unset;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    opacity: 0.1;        
+}
 
 .service-label{
     
+}
+
+.service-card-container{
+    z-index: 4;
 }
 
 .service-card {
@@ -1729,7 +1826,7 @@ a{
     border-width: 0px;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 55px;
-    border-left-width: 3px;
+    border-left-width: 3px;    
 }  
 .service-image {
     width: 30px;
@@ -1753,9 +1850,26 @@ a{
     } 
 }  
 .progress-container {
-    background-color: #192229;
+    /* background-color: #192229; */
+    background-color: #1f2933;
     font-family: 'Josefin Sans', sans-serif;
+    position: relative;
 }  
+
+.progress-container > *{
+    z-index: 3;
+}
+
+.progress-container:before{
+    content: '';
+    background-image: url('https://assets.hongkiat.com/uploads/pattern-wallpapers/01.jpg');
+    background-size: unset;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    opacity: 0.1;        
+}
 
 .main-heading-progress{
     color: #ccfcbd;
@@ -1815,8 +1929,26 @@ svg {
     font-size: 30px;
 }  
 .footer-container {
-    background-color: #13191f;
+    /* background-color: #13191f; */
+    background-color: #192129;
+    position: relative;
+    overflow: hidden;
 }  
+
+.footer-container > *{
+    z-index: 3;
+}
+
+.footer-container:before{
+    content: '';
+    background-image: url('https://assets.hongkiat.com/uploads/pattern-wallpapers/01.jpg');
+    background-size: unset;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    opacity: 0.07;        
+}
 .logo {
     height: 65px;
     width: 65px;
@@ -1825,18 +1957,23 @@ svg {
 .contacts-icon-container {
     color: #b5b9c0;
     height: 40px;
-    background-color: #192029;
+    background-color: #2d3641;
     padding-top: 15px;
     padding-bottom: 35px;
     padding-left: 20px;
     padding-right: 20px;
-    border-radius: 60px;
+    border-radius: 60px;    
     transition: background-color 0.3s, color 0.3s;
 }  
+
+.contact-svg-container{
+    z-index: 4;
+}
+
 .contacts-icon-container:hover {
     cursor: pointer;
     background-color: #b1f59a;
-    color: #242e3b;
+    color: #242e3b;    
 }  
 .contacts-icon {
     font-size: 19px;
@@ -1852,9 +1989,12 @@ svg {
     font-weight: bold;
 }  
 .contacts-help {
-    font-family: 'Montserrat Alternates', sans-serif;
-    background-color: #13191f;
+    font-family: 'Montserrat Alternates', sans-serif;    
     word-wrap: break-word;
+}
+
+.contact-fas{
+    font-size: 20px;
 }
 
 .address{    
@@ -1869,4 +2009,17 @@ svg {
 
 .footer-my-name{
     color: #b1f59a !important;
+}
+
+@media screen and (min-width: 950px){
+    .contact-us-container{
+        font-size: 18px;
+    }
+
+    .paragraph{
+        font-size: 17px;
+    }
+    .contact-heading{
+        font-size: 25px;
+    }
 }
