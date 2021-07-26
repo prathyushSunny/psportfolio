@@ -435,7 +435,7 @@ a{
     color: #cddbe9 !important;
 }  
 .color2{
-    color: #dab2b2 !important;
+    color: #dab2b2 !important;    
 }  
 #mainContent {
     position: absolute;
@@ -806,7 +806,7 @@ a{
     justify-content: center;
     align-items: center;
     width: 50px;
-    z-index: 3;
+    z-index: 4;
     background-image: linear-gradient(to right, black, transparent);    
     animation: sectionSliderClose 0.5s 0.3s ease-out forwards;  
 }  
@@ -1103,6 +1103,7 @@ a{
     color: #dedede;
     font-size: 20px;
     font-weight: 600;
+    z-index: 3;
 }  
 
 .about{
