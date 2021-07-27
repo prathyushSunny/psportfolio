@@ -13,7 +13,7 @@ let sidebarOptions = document.querySelectorAll('.option-container');
 let navLogo = document.querySelector('.nav-logo');
 let contactIcons = document.querySelectorAll('.contacts-icon-container');
 let toggleCursor = document.querySelector('.toggle-custom-cursor-btn');
-let isCursorEnabled = false;
+let isCursorEnabled = true;
 let windowCursorCompatibility = true;
 setInterval(() => windowCursorCompatibility = window.innerWidth >= 900, 500);
 let mouseClicked = false;
@@ -207,7 +207,7 @@ setTimeout(function() {
     //     setTimeout(() => contactFormContainer.style.display = 'none', 400);
     // }
     // formCross.onclick = () => closeContactForm();        
-}, 6000);
+}, 0);
 
 
 
