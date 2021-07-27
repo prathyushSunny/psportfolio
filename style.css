@@ -729,7 +729,7 @@ a{
     right: 0%;
     transform: translateX(100%);
     background-image: linear-gradient(to left, black, transparent);       
-    z-index: 4;    
+    z-index: 5;    
     backdrop-filter: blur(4px);
 }  
 .nav-links-small{
@@ -806,7 +806,7 @@ a{
     justify-content: center;
     align-items: center;
     width: 50px;
-    z-index: 4;
+    z-index: 10;
     background-image: linear-gradient(to right, black, transparent);    
     animation: sectionSliderClose 0.5s 0.3s ease-out forwards;  
 }  
@@ -1814,7 +1814,7 @@ a{
 }
 
 .service-card-container{
-    z-index: 4;
+    z-index: 3;
 }
 
 .service-card {
@@ -1982,6 +1982,7 @@ svg {
 .paragraph {
     font-family: 'Josefin Sans', sans-serif;
     color: #9aa5b1;
+    z-index: 3;
 }  
 .contact-heading {
     font-family: 'Josefin Sans', sans-serif;
@@ -2010,6 +2011,7 @@ svg {
 
 .footer-my-name{
     color: #b1f59a !important;
+    z-index: 4;
 }
 
 @media screen and (min-width: 950px){
