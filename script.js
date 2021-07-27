@@ -13,7 +13,7 @@ let sidebarOptions = document.querySelectorAll('.option-container');
 let navLogo = document.querySelector('.nav-logo');
 let contactIcons = document.querySelectorAll('.contacts-icon-container');
 let toggleCursor = document.querySelector('.toggle-custom-cursor-btn');
-let isCursorEnabled = true;
+let isCursorEnabled = false;
 let windowCursorCompatibility = true;
 setInterval(() => windowCursorCompatibility = window.innerWidth >= 900, 500);
 let mouseClicked = false;
