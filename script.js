@@ -207,7 +207,7 @@ setTimeout(function() {
     //     setTimeout(() => contactFormContainer.style.display = 'none', 400);
     // }
     // formCross.onclick = () => closeContactForm();        
-}, 0);
+}, 6000);
 
 
 
