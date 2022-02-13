@@ -332,6 +332,7 @@ body{
     transform: none;
     transition: top 0.2s ease-out, left 0.2s ease-out;
     animation: cursorCircle 1.2s infinite;    
+    pointer-events: none;
 }
 
 .cursor-clicked{
