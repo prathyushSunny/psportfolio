@@ -116,7 +116,8 @@ setTimeout(function() {
             pageY = e.screenY - 114.5;        
             cursor.style.left = (e.pageX-12.5) + 'px';
             cursor.style.top = (e.pageY-12.5) + 'px';
-        }else cursor.style.display = 'none';
+        }
+        */else cursor.style.display = 'none';*/
     });
     //Custom cursor disabling on Mouse Hover on different Sections
     mouseInOut = element => {
