@@ -1,3 +1,4 @@
+const INTRO_ANIMATION_MS = 2;
 let loading = document.getElementById('loading');
 let main = document.getElementById('mainContent');
 let loadingPercentage = document.getElementById('loadingPercentage');
@@ -101,12 +102,12 @@ setTimeout(function() {
         }
     }    
     //To hide the navbar on scrolling downwards and vice versa
-    window.addEventListener('scroll', () => {                  
-        cursor.style.top = (window.pageYOffset + pageY) + 'px';               
-        if (window.pageYOffset > presentYOffset &&!hamburger.classList.contains('cross')) navbar.classList.add('navbar-hidden');
-        else navbar.classList.remove('navbar-hidden');
-        presentYOffset = window.pageYOffset;
-    })
+    // window.addEventListener('scroll', () => {                  
+    //     cursor.style.top = (window.pageYOffset + pageY) + 'px';               
+    //     if (window.pageYOffset > presentYOffset &&!hamburger.classList.contains('cross')) navbar.classList.add('navbar-hidden');
+    //     else navbar.classList.remove('navbar-hidden');
+    //     presentYOffset = window.pageYOffset;
+    // })
 
     //custom cursor
     window.addEventListener('mousemove', e => {
@@ -208,7 +209,7 @@ setTimeout(function() {
     //     setTimeout(() => contactFormContainer.style.display = 'none', 400);
     // }
     // formCross.onclick = () => closeContactForm();        
-}, 6000);
+}, INTRO_ANIMATION_MS);
 
 
 
