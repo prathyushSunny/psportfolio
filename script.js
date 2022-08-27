@@ -1,4 +1,4 @@
-const INTRO_ANIMATION_MS = 2;
+const INTRO_ANIMATION_MS = 6000;
 let loading = document.getElementById('loading');
 let main = document.getElementById('mainContent');
 let loadingPercentage = document.getElementById('loadingPercentage');
