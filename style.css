@@ -5,10 +5,6 @@ html{
     overflow-x: hidden !important;
 }  
 
-body{
-    /* position: relative;     */    
-}
-
 *{  
     padding: 0px;
     margin: 0px;
@@ -446,8 +442,7 @@ a{
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }  
-.main-content-position-fixed{                
-}  
+
 @keyframes loadMainContent {
     0% {
         opacity: 0;
@@ -522,7 +517,7 @@ a{
         transform: scale(1.5, 1.5);
     }
 }
-}  
+ 
 .content-container {
     align-items: center;
     font-family: roboto;
@@ -640,7 +635,8 @@ a{
 .navbar {
     position: absolute;
     height: 90px;
-    background-image: linear-gradient(rgb(12, 12, 12), transparent);       
+    background-image: linear-gradient(rgb(12, 12, 12) 10%, transparent);
+    backdrop-filter: blur(1px);
     font-family: 'DM Sans', sans-serif;
     justify-content: space-between;
     transform: none;
@@ -650,10 +646,7 @@ a{
 .navbar-hidden{
     transform: translateY(-200px);
 }
-
-.nv {
-    
-}  
+  
 .navbar-toggler {        
     border-width: 3px;
     border-color: #9c1414;
@@ -1015,9 +1008,13 @@ a{
 .myself-heading {
     color: #e8e8e8;
     font-family: 'Josefin Sans', sans-serif;
-}  
+} 
+
+.myself-image{
+    padding-top: 100px; 
+}
+
 .myself-image-png {
-    margin-top: 20px;
     height: 180px;
     align-items: center;
 }  
@@ -1200,7 +1197,7 @@ a{
     .about-paragraph-list{
         padding-left: 20px;
         padding-right: 20px;
-        margin-top 15px;
+        margin-top: 15px;
     }
     .about-paragraph-list > li{
         font-size: 18px;
@@ -1565,9 +1562,6 @@ a{
     bottom: 225px;
 }
 
-.project-container:hover{
-}
-
 .project-options{
     margin-top: 10px;
     display: flex;
@@ -1820,10 +1814,6 @@ a{
     opacity: 0.1;        
 }
 
-.service-label{
-    
-}
-
 .service-card-container{
     z-index: 3;
 }
@@ -2008,9 +1998,6 @@ svg {
 
 .contact-fas{
     font-size: 20px;
-}
-
-.address{    
 }
 
 .hr {
