@@ -87,6 +87,7 @@ setTimeout(function () {
       experience = `almost ${roundedYears + 1} Years`;
     }
     document.querySelector(".my-exp-num").textContent = experience;
+    document.querySelector(".workex-years").textContent = roundedYears + "+";
   };
   setMyAge();
   setMyExperience();
