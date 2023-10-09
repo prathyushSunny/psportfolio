@@ -643,6 +643,8 @@ a {
   height: 90px;
   background-image: linear-gradient(rgb(12, 12, 12) 10%, transparent);
   backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  -moz-backdrop-filter: blur(1px);
   font-family: "DM Sans", sans-serif;
   justify-content: space-between;
   transform: none;
