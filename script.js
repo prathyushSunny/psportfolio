@@ -79,7 +79,7 @@ setTimeout(function () {
     const yearsOfExperience = experienceInMilliseconds / millisecondsInYear;
     const monthsDecimal = Math.floor((yearsOfExperience % 1) * 12);
     const roundedYears = Math.floor(yearsOfExperience);
-    if (monthsDecimal >= 2) {
+    if (monthsDecimal >= 2 && monthsDecimal <= 4) {
       experience = `almost ${roundedYears} and a Half Years`;
     } else if (monthsDecimal === 5) {
       experience = `${roundedYears} and a Half Years`;
