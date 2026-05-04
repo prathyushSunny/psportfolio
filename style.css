@@ -1185,6 +1185,9 @@ a {
 }
 
 @media (max-width: 949px) {
+  .home-intro-div{
+    padding-top: 50%;
+  }
   .home-page-container {
     position: relative;
     background-color: #1f2933;
